@@ -1,0 +1,29 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 5px solid $main-border-color;
+}
+
+.slider__img {
+  position: relative;
+}
+
+.slider__title {
+  font-size: 85px;
+  padding-top: 40px;
+}
+
+.slider__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.slider__slogan {
+  font-size: 25px;
+}

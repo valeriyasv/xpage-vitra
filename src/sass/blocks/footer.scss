@@ -1,0 +1,158 @@
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+   }
+}
+
+.footer {
+  background-color: $footer-color;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 40px;
+
+  @media (max-width: $tablet-width) {
+   padding: 0;
+  }
+}
+
+.footer__mail  {
+  max-width: 325px;
+
+  @media (max-width: $tablet-width) {
+    order: 2;
+   }
+}
+
+.footer__up {
+  @media (max-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 40px 0;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.footer__nav-list {
+  margin-left: 20px;
+  width: 210px;
+  font-size: 16px;
+}
+
+.footer__nav-item {
+  margin-bottom: 8px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &--title {
+    margin-bottom: 18px;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #CACACA;
+      width: 100%;
+    }
+  }
+
+  &--block {
+    @media (max-width: $tablet-width) {
+      display: block;
+      margin-bottom: 18px;
+    }
+  }
+
+}
+
+.footer__social-icon {
+  &:not(:last-child) {
+    border-right: 1px solid #CACACA;
+    padding-right: 20px;
+  }
+  padding-left: 20px;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 24px;
+  border-top: 1px solid #ffffff;
+  margin-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 0;
+  }
+}
+
+.footer__bottom-privacy {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__bottom  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.footer__bottom-privacy-link {
+  margin-left: 20px;
+}
+
+.footer__mail-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid hsl(0, 0%, 100%);
+  padding-bottom: 15px;
+  margin-top: 20px;
+  width: 100%;
+  color: #ffffff;
+  position: relative;
+ 
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &::after {
+    content: "→";
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #ffffff;
+    width: 13px;
+    height:  25px;
+    z-index: 8;
+  }
+}

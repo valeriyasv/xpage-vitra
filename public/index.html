@@ -35,24 +35,153 @@
         </nav>
       </div>
     </header>
-    <div class="slider"> <img class="slider__img" src="img/photo1.jpg" alt=""><img src="img/photo2.jpg" alt="">
+    <div class="slider"> 
+      <picture>
+        <source media="(max-width: 768px)" srcset="img/photo-mobile1.jpg"><img class="slider__img" src="img/photo1.jpg" alt="">
+      </picture><img class="slider__img2" src="img/photo2.jpg" alt="">
       <div class="slider__content">
-        <div class="wrapper">
-          <h1 class="slider__title">VitrA Tiles<br> at Cersaie Exhibition </h1>
-          <p class="slider__slogan">Встречайте новое поступление<br> плитки и сантехники →</p>
-        </div>
+        <h1 class="slider__title">VitrA Tiles<br> at Cersaie Exhibition </h1>
+        <p class="slider__slogan">Встречайте новое поступление<br> плитки и сантехники →</p>
       </div>
     </div>
     <div class="collection"> 
       <div class="wrapper">
-        <h2 class="collection__title">Коллекции</h2>
-        <nav>
-          <ul class="collection__nav">
-            <li class="collection__nav-item">Коллекции сантехники →</li>
-            <li class="collection__nav-item">Коллекции плитки →</li>
-          </ul><img src="img/icons/icon-arr-slide.svg" alt=""><img src="img/icons/icon-arr-slide.svg" alt="">
-        </nav><img src="img/photo-collection.jpg" alt="">
+        <div class="collection__top">
+          <div class="collection__txt">
+            <h2 class="collection__title">Коллекции</h2>
+            <ul class="collection__nav">
+              <li class="collection__nav-item">Коллекции сантехники →</li>
+              <li class="collection__nav-item">Коллекции плитки →</li>
+            </ul>
+          </div>
+          <div class="collection__arr"><a href="#"><img src="img/icons/icon-arr-slide.svg" alt=""></a><a href="#"><img class="collection__arr-img" src="img/icons/icon-arr-slide.svg" alt=""></a></div>
+        </div>
+        <div class="collection__images">
+          <picture> 
+            <source media="(max-width: 768px)" srcset="img/photo-collect-mobile.jpg"><img class="collection__photo" src="img/photo-collection.jpg" alt="">
+          </picture>
+          <article class="card">
+            <div class="card__image"><img class="card__pict" src="img/photo-card.jpg" width="440" height="440">
+              <div class="card__badges"> 
+                <div class="card__badges-bests">Бестселлер</div>
+                <div class="card__badges-new">New</div>
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__desc">
+                <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                <div class="card__bottom">
+                  <p class="card__price">2 540 Р.</p>
+                  <button class="card__button">Купить </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
+    <div class="ideas"> 
+      <div class="wrapper">
+        <h2 class="ideas__title">Идеи</h2>
+        <div class="ideas__nav-bottom">
+          <ul class="ideas__nav"> 
+            <li class="ideas__nav-item"> Решения для ванной</li>
+            <li class="ideas__nav-item"> Дизайн туалета</li>
+            <li class="ideas__nav-item"> Твой стиль</li>
+            <li class="ideas__nav-item">Дизайн ванной</li>
+            <li class="ideas__nav-item">Экономия воды</li>
+          </ul><a href="#">Все идеи →</a>
+        </div>
+        <div class="ideas__gallery"> 
+          <div class="ideas__card ideas__card--row"> 
+            <picture> 
+              <source media="(max-width: 768px)" srcset="img/ideas-photo-mobile.jpg"><img class="ideas__img" src="img/ideas-photo1.jpg" height="310">
+            </picture>
+            <div class="ideas__card-desc">
+              <p class="ideas__card-desc-txt">Решения для хранения</p>
+              <p>Максимальное пространство для хранения без ущерба для внешнего вида комнаты</p>
+            </div>
+          </div>
+          <div class="ideas__row">
+            <div class="ideas__card ideas__card--width">
+              <picture> 
+                <source media="(max-width: 768px)" srcset="img/ideas-photo-mobile2.jpg"><img class="ideas__img ideas__img--width" src="img/ideas-photo2.jpg" height="310">
+              </picture>
+              <div class="ideas__card-desc ideas__card-desc--width">
+                <p class="ideas__card-desc-txt">Дизайн туалета</p>
+                <p>Соображения по поводу дизайна ключевой части образа вашей ванной комнаты!</p>
+              </div>
+            </div>
+            <div class="ideas__card">
+              <picture> 
+                <source media="(max-width: 768px)" srcset="img/ideas-photo-mobile3.jpg"><img class="ideas__img" src="img/ideas-photo3.jpg" height="310">
+              </picture>
+              <div class="ideas__card-desc">
+                <p class="ideas__card-desc-txt">Экономим воду</p>
+                <p>Как сэкономить воду без <br> ущерба для стиля</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapper"> 
+        <div class="footer__top">
+          <div class="footer__mail"> 
+            <p>Мы собираем самые интересные материалы в рассылку по вторникам</p>
+            <input class="footer__mail-input" type="email" placeholder="Электронная почта">
+          </div>
+          <div class="footer__up"> <a href="#">Наверх  ↑</a></div>
+        </div>
+        <div class="footer__nav"> 
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item footer__nav-item--block"><a href="#">Идеи и вдохновение</a></li>
+            <li class="footer__nav-item footer__nav-item--block"><a href="#">Новости</a></li>
+            <li class="footer__nav-item footer__nav-item--block"><a href="#">Каталоги</a></li>
+            <li class="footer__nav-item footer__nav-item--block"><a href="#">Где купить</a></li>
+            <li class="footer__nav-item footer__nav-item--block"><a href="#">Сервисы</a></li>
+            <li class="footer__nav-item footer__nav-item--block"><a href="#">Дистрибьютерам</a></li>
+            <li class="footer__nav-item footer__nav-item--block"><a href="#">FAQ</a></li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item footer__nav-item--title">О компании —</li>
+            <li class="footer__nav-item"> <a href="#">История Vitra</a></li>
+            <li class="footer__nav-item"> <a href="#">Дизайн</a></li>
+            <li class="footer__nav-item"> <a href="#">Инновации</a></li>
+            <li class="footer__nav-item"><a href="#">Экологичность</a></li>
+            <li class="footer__nav-item"><a href="#">Корпоративная<br>ответственность</a></li>
+            <li class="footer__nav-item"><a href="#">Vitra и архитекторы</a></li>
+            <li class="footer__nav-item"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item footer__nav-item--title">Все продукты —</li>
+            <li class="footer__nav-item"><a href="#">Сантехника для ванной</a></li>
+            <li class="footer__nav-item"><a href="#">Плитка</a></li>
+            <li class="footer__nav-item"><a href="#">Смесители</a></li>
+            <li class="footer__nav-item"><a href="#">Инсталяции</a></li>
+            <li class="footer__nav-item"><a href="#">Душевые системы</a></li>
+            <li class="footer__nav-item"><a href="#">Аксессуары</a></li>
+            <li class="footer__nav-item"><a href="#">Мебель для ванной</a></li>
+            <li class="footer__nav-item"><a href="#">Ванны</a></li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item footer__nav-item--title">Шоурумы —</li>
+            <li class="footer__nav-item"><a href="#">Диджитал шоурум<br>сантехники</a></li>
+            <li class="footer__nav-item"><a href="#">Диджитал шоурум плитки</a></li>
+            <li class="footer__nav-item"><a href="#">Шоурум плитки</a></li>
+          </ul>
+        </div>
+        <div class="footer__social"> <img src="img/icons/icon-footer-img.svg" alt="">
+          <div class="footer__social-list"> <img class="footer__social-icon" src="img/icons/icon-insta.svg" alt=""><img class="footer__social-icon" src="img/icons/icon-facebook.svg" alt=""><img class="footer__social-icon" src="img/icons/icon-vk.svg" alt=""><img class="footer__social-icon" src="img/icons/icon-youtube.svg" alt=""></div>
+        </div>
+        <div class="footer__bottom"> 
+          <div class="footer__bottom-privacy">
+            <p>Vitra 2021</p><a class="footer__bottom-privacy-link" href="#">Политика конфиденциальности</a>
+          </div>
+          <p>Made by ONY</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

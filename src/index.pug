@@ -11,7 +11,7 @@ html(lang="ru")
 
     .slider 
       picture
-        source(media="(max-width: 768px)" srcset="img/photo-mobile1.jpg")
+        source(media="(max-width: 980px)" srcset="img/photo-mobile1.jpg")
         img(src="img/photo1.jpg", alt="").slider__img
       img(src="img/photo2.jpg", alt="").slider__img2
       .slider__content
@@ -31,8 +31,8 @@ html(lang="ru")
             a(href="#")
               img(src="img/icons/icon-arr-slide.svg", alt="").collection__arr-img
         .collection__images
-          picture 
-            source(media="(max-width: 768px)" srcset="img/photo-collect-mobile.jpg")
+          picture.collection__photo 
+            source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
             img(src="img/photo-collection.jpg", alt="").collection__photo
           article.card
             .card__image
@@ -57,27 +57,29 @@ html(lang="ru")
             li.ideas__nav-item  Твой стиль
             li.ideas__nav-item Дизайн ванной
             li.ideas__nav-item Экономия воды
-          a(href="#") Все идеи →
+          a(href="#").ideas__all Все идеи →
         .ideas__gallery 
           .ideas__card.ideas__card--row 
             picture 
-              source(media="(max-width: 768px)" srcset="img/ideas-photo-mobile.jpg")
-              img(src="img/ideas-photo1.jpg" height="310").ideas__img
-            .ideas__card-desc
+              source(media="(max-width: 980px)" srcset="img/ideas-photo-mobile.jpg")
+              img(src="img/ideas-photo1.jpg").ideas__img
+            .ideas__card-desc.ideas__card-desc--row
               p.ideas__card-desc-txt Решения для хранения
               p Максимальное пространство для хранения без ущерба для внешнего вида комнаты
           .ideas__row
             .ideas__card.ideas__card--width
-              picture 
-                source(media="(max-width: 768px)" srcset="img/ideas-photo-mobile2.jpg")
-                img(src="img/ideas-photo2.jpg" height="310").ideas__img.ideas__img--width
+              .ideas__card-picture
+                picture 
+                  source(media="(max-width: 980px)" srcset="img/ideas-photo-mobile2.jpg")
+                  img(src="img/ideas-photo2.jpg").ideas__img.ideas__img--width
               .ideas__card-desc.ideas__card-desc--width
                 p.ideas__card-desc-txt Дизайн туалета
                 p Соображения по поводу дизайна ключевой части образа вашей ванной комнаты!
             .ideas__card
-              picture 
-                source(media="(max-width: 768px)" srcset="img/ideas-photo-mobile3.jpg")
-                img(src="img/ideas-photo3.jpg" height="310").ideas__img
+              .ideas__card-picture
+                picture 
+                  source(media="(max-width: 980px)" srcset="img/ideas-photo-mobile3.jpg")
+                  img(src="img/ideas-photo3.jpg").ideas__img
               .ideas__card-desc
                 p.ideas__card-desc-txt Экономим воду
                 p Как сэкономить воду без <br> ущерба для стиля

@@ -1,23 +1,31 @@
 header.main-header
   .wrapper
-    .main-header__top
-      .logo 
-        img(src="img/icons/icon-logo.svg" wigth="135" height="40") 
-      ul.main-header__options
-        li.main-header__options-item Москва
-        li.main-header__options-item Сервисы
-        li.main-header__options-item 
-          img(src="img/icons/icon-star.svg" wigth="25" height="25") 
-        li.main-header__options-item
-          img(src="img/icons/icon-compare.svg" wigth="25" height="25") 
-        li.main-header__options-item RU
-    nav.main-header__bottom
-      ul.main-header__nav 
-        li.main-header__nav-item Сантехника
-        li.main-header__nav-item Плитка
-        li.main-header__nav-item Коллекции
-        li.main-header__nav-item Идеи
-        li.main-header__nav-item О компании
-      .main-header__search 
-        p.main-header__search-item Поиск
-        p.main-header__search-item Где купить
+    .main-header__shell
+      .main-header__top
+        .logo 
+          img(src="img/icons/icon-logo.svg" wigth="135" height="40")
+        ul.main-header__options
+          li.main-header__options-item.main-header__options-item--hidden Москва
+          li.main-header__options-item.main-header__options-item--hidden Сервисы
+          li.main-header__options-item 
+            img(src="img/icons/icon-star.svg" wigth="25" height="25") 
+          li.main-header__options-item
+            img(src="img/icons/icon-compare.svg" wigth="25" height="25") 
+          li.main-header__options-item.main-header__options-item--hidden RU
+      img(src="img/icons/icon-logo.svg" wigth="135" height="40").main-header__logo
+      nav.main-header__bottom
+        img(src="img/icons/icon-burger.svg" wigth="25" height="25").main-header__burger
+        ul.main-header__nav 
+          li.main-header__nav-item Сантехника
+          li.main-header__nav-item Плитка
+          li.main-header__nav-item Коллекции
+          li.main-header__nav-item Идеи
+          li.main-header__nav-item О компании
+        .main-header__search
+          .main-header__search--icon
+            img(src="img/icons/icon-search.svg" wigth="16" height="16")
+            p.main-header__search-item Поиск
+          .main-header__search--where
+            img(src="img/icons/icon-map.svg" wigth="11" height="16")
+            p.main-header__search-item--map Где купить
+    include menu.pug

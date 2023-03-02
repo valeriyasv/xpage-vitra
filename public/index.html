@@ -14,7 +14,8 @@
           <div class="main-header__top">
             <div class="logo"> <img src="img/icons/icon-logo.svg" wigth="135" height="40"></div>
             <ul class="main-header__options">
-              <li class="main-header__options-item main-header__options-item--hidden">Москва</li>
+              <li class="main-header__options-item"><a class="main-header__options-item--hidden" href="#"> <img src="img/icons/icon-where.svg" wigth="12" height="13">
+                  <p>Москва</p></a></li>
               <li class="main-header__options-item main-header__options-item--hidden">Сервисы</li>
               <li class="main-header__options-item"> <img src="img/icons/icon-star.svg" wigth="25" height="25"></li>
               <li class="main-header__options-item"><img src="img/icons/icon-compare.svg" wigth="25" height="25"></li>
@@ -23,11 +24,12 @@
           </div><img class="main-header__logo" src="img/icons/icon-logo.svg" wigth="135" height="40">
           <nav class="main-header__bottom"><img class="main-header__burger" src="img/icons/icon-burger.svg" wigth="25" height="25">
             <ul class="main-header__nav"> 
-              <li class="main-header__nav-item">Сантехника</li>
-              <li class="main-header__nav-item">Плитка</li>
-              <li class="main-header__nav-item">Коллекции</li>
-              <li class="main-header__nav-item">Идеи</li>
-              <li class="main-header__nav-item">О компании</li>
+              <li class="main-header__nav-item"><a class="main-header__nav-item--hover" href="#"><img src="img/icons/icon-santeh.svg" wigth="20" height="25">
+                  <p>Сантехника</p><img src="img/icons/icon-clip.svg" wigth="8" height="5"></a></li>
+              <li class="main-header__nav-item"> <a href="#">Плитка</a></li>
+              <li class="main-header__nav-item"> <a href="#">Коллекции</a></li>
+              <li class="main-header__nav-item"> <a href="#">Идеи</a></li>
+              <li class="main-header__nav-item"> <a href="#">О компании</a></li>
             </ul>
             <div class="main-header__search">
               <div class="main-header__search--icon"><img src="img/icons/icon-search.svg" wigth="16" height="16">
@@ -42,7 +44,7 @@
         <div class="menu">
           <div class="menu__shell">
             <div class="menu__top">
-              <div class="menu__santeh"> <a class="menu__santeh-link" href="#santeh.html"></a>
+              <div class="menu__santeh"> <a class="menu__santeh-link" href="#"></a>
                 <div class="menu__santeh-img"><img class="menu__picture" src="img/santeh.jpg" alt=""></div>
                 <p class="menu__name">Сантехника</p>
               </div>
@@ -69,6 +71,36 @@
         </div>
       </div>
     </header>
+    <div class="santeh-list"> 
+      <div class="wrapper">
+        <div class="santeh-list__shell">
+          <div class="santeh-list__nav"> 
+            <ul class="santeh-list__nav-santeh">
+              <li><a class="santeh-list__nav-santeh-link" href="#"><img src="img/icons/icon-hover-arr.svg" alt="">
+                  <p>Сантехника для ванной </p></a></li>
+              <li> <a href="#">Мебель для ванной</a></li>
+              <li> <a href="#">Смесители</a></li>
+              <li> <a href="#">Инсталляции</a></li>
+              <li> <a href="#">Ванны</a></li>
+              <li> <a href="#">Душевые системы</a></li>
+              <li> <a href="#">Аксессуары</a></li>
+            </ul>
+            <ul class="santeh-list__nav-common"> 
+              <li> <a href="#">Все товары</a></li>
+              <li> <a href="#">Унитазы</a></li>
+              <li> <a href="#">Раковины</a></li>
+              <li> <a href="#">Писсуары</a></li>
+              <li> <a href="#">Биде</a></li>
+              <li> <a href="#">Комплектующие</a></li>
+              <li> <a href="#">Пьедесталы</a></li>
+            </ul>
+          </div>
+          <div class="santeh-list__prewiev">
+            <div class="santeh-list__prewiev-pict"> <img class="santeh-list__prewiev-img" src="img/hover.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="slider"> 
       <picture>
         <source media="(max-width: 980px)" srcset="img/photo-mobile1.jpg"><img class="slider__img" src="img/photo1.jpg" alt="">

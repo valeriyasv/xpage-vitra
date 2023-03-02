@@ -17,6 +17,7 @@
 .main-header__options {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .main-header__options-item {
@@ -35,6 +36,14 @@
   }
 
   &--hidden {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    p {
+      padding-left: 10px;
+    }
+  
     @media (max-width: 800px) {
       display: none;
     }
@@ -44,6 +53,7 @@
 .main-header__nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   @media (max-width: 800px) {
     display: none;
@@ -64,6 +74,16 @@
 
 .main-header__nav-item {
   margin-right: 25px;
+
+  &--hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+      padding: 0 5px;
+    }
+  }
 }
 
 .main-header__search {
@@ -136,4 +156,8 @@
   @media (max-width: 800px) {
     display: none;
   }
+}
+
+.main-header__nav-item--hover:hover.santeh-list {
+  display: block;
 }

@@ -5,7 +5,10 @@ header.main-header
         .logo 
           img(src="img/icons/icon-logo.svg" wigth="135" height="40")
         ul.main-header__options
-          li.main-header__options-item.main-header__options-item--hidden Москва
+          li.main-header__options-item
+            a(href="#").main-header__options-item--hidden 
+              img(src="img/icons/icon-where.svg" wigth="12" height="13") 
+              p Москва
           li.main-header__options-item.main-header__options-item--hidden Сервисы
           li.main-header__options-item 
             img(src="img/icons/icon-star.svg" wigth="25" height="25") 
@@ -16,11 +19,19 @@ header.main-header
       nav.main-header__bottom
         img(src="img/icons/icon-burger.svg" wigth="25" height="25").main-header__burger
         ul.main-header__nav 
-          li.main-header__nav-item Сантехника
-          li.main-header__nav-item Плитка
-          li.main-header__nav-item Коллекции
-          li.main-header__nav-item Идеи
-          li.main-header__nav-item О компании
+          li.main-header__nav-item
+            a(href="#").main-header__nav-item--hover
+              img(src="img/icons/icon-santeh.svg" wigth="20" height="25") 
+              p Сантехника
+              img(src="img/icons/icon-clip.svg" wigth="8" height="5") 
+          li.main-header__nav-item 
+            a(href="#") Плитка
+          li.main-header__nav-item 
+            a(href="#") Коллекции
+          li.main-header__nav-item 
+            a(href="#") Идеи
+          li.main-header__nav-item 
+            a(href="#") О компании
         .main-header__search
           .main-header__search--icon
             img(src="img/icons/icon-search.svg" wigth="16" height="16")

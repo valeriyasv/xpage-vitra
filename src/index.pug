@@ -31,9 +31,20 @@ html(lang="ru")
             a(href="#")
               img(src="img/icons/icon-arr-slide.svg", alt="").collection__arr-img
         .collection__images
-          picture.collection__photo 
-            source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
-            img(src="img/photo-collection.jpg", alt="").collection__photo
+          .coll
+            .collection__images-shell
+              picture
+                source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
+                img(src="img/photo-collection.jpg", alt="").collection__photo
+              .collection__btn-plus
+                a(href="#").black
+                  img(src="img/icons/icon-plus-black.svg", width="27" height="27" alt="")
+                a(href="#").black
+                  img(src="img/icons/icon-plus-black.svg", width="27" height="27" alt="")
+                a(href="#").black
+                  img(src="img/icons/icon-plus-black.svg", width="27" height="27" alt="")
+                a(href="#").red
+                  img(src="img/icons/icon-plus-red.svg", width="47" height="47" alt="")
           article.card
             .card__image
               img(src="img/photo-card.jpg" width="440" height="440").card__pict

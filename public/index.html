@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Vitra</title>
   </head>
   <body> 
@@ -17,8 +18,8 @@
               <li class="main-header__options-item"><a class="main-header__options-item--hidden" href="#"> <img src="img/icons/icon-where.svg" wigth="12" height="13">
                   <p>Москва</p></a></li>
               <li class="main-header__options-item main-header__options-item--hidden">Сервисы</li>
-              <li class="main-header__options-item"> <img src="img/icons/icon-star.svg" wigth="25" height="25"></li>
-              <li class="main-header__options-item"><img src="img/icons/icon-compare.svg" wigth="25" height="25"></li>
+              <li class="main-header__options-item main-header__options-item--star"> <img src="img/icons/icon-star.svg" wigth="25" height="25"></li>
+              <li class="main-header__options-item main-header__options-item--arr"><img src="img/icons/icon-compare.svg" wigth="25" height="25"></li>
               <li class="main-header__options-item main-header__options-item--hidden">RU</li>
             </ul>
           </div><img class="main-header__logo" src="img/icons/icon-logo.svg" wigth="135" height="40">
@@ -101,14 +102,26 @@
         </div>
       </div>
     </div>
-    <div class="slider"> 
-      <picture>
-        <source media="(max-width: 980px)" srcset="img/photo-mobile1.jpg"><img class="slider__img" src="img/photo1.jpg" alt="">
-      </picture><img class="slider__img2" src="img/photo2.jpg" alt="">
-      <div class="slider__content">
-        <h1 class="slider__title">VitrA Tiles<br> at Cersaie Exhibition </h1>
-        <p class="slider__slogan">Встречайте новое поступление<br> плитки и сантехники →</p>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-slide__main"> 
+            <div class="swiper-slide__main-santeh"> <img src="img/photo-main-san.jpg" alt="">
+              <div class="swiper-slide__main-santeh-content">
+                <p>Сантехника</p><span>Встречайте новое<br>поступление сантехники<br>из натурального камня →</span>
+              </div>
+            </div>
+            <div class="swiper-slide__main-tile"><img src="img/photo-main-tile.jpg" alt="">
+              <div class="swiper-slide__main-tile-content">
+                <p>Плитка</p><span>Оцените возможности<br> керамогранита с новой<br>серией MIX 2020 →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="img/photo1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/photo2.jpg" alt=""></div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
     <div class="collection"> 
       <div class="wrapper">
@@ -258,5 +271,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,1 @@
+const swiper=new Swiper(".swiper-container",{slidesPerView:1.1,spaceBetween:1,pagination:{el:".swiper-pagination",clickable:!0}});console.log(swiper);

@@ -42,6 +42,7 @@ const copy = (done) => {
   'src/fonts/*.{woff, woff2}',
   'src/video/*.mp4',
   'src/js/*.js',
+  'src/*.vue',
   ], {
   base: 'src'
   })

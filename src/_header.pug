@@ -11,13 +11,14 @@ header.main-header
               p Москва
           li.main-header__options-item.main-header__options-item--hidden Сервисы
           li.main-header__options-item.main-header__options-item--star 
-            img(src="img/icons/icon-star.svg" wigth="25" height="25") 
+            img(src="img/icons/icon-star.svg" wigth="25" height="25").main-header__options-img
           li.main-header__options-item.main-header__options-item--arr
             img(src="img/icons/icon-compare.svg" wigth="25" height="25") 
           li.main-header__options-item.main-header__options-item--hidden RU
       img(src="img/icons/icon-logo.svg" wigth="135" height="40").main-header__logo
       nav.main-header__bottom
         img(src="img/icons/icon-burger.svg" wigth="25" height="25").main-header__burger
+        img(src="img/icons/icon-close.svg" wigth="25" height="25").main-header__burger-close
         ul.main-header__nav 
           li.main-header__nav-item
             a(href="#").main-header__nav-item--hover
@@ -40,3 +41,5 @@ header.main-header
             img(src="img/icons/icon-map.svg" wigth="11" height="16")
             p.main-header__search-item--map Где купить
     include menu.pug
+    script(src='js/burger.js')
+    script(src='js/nav-hover.js')

@@ -1,11 +1,31 @@
 .menu {
   display: none;
 
-  // @media (max-width: 900px) {
-  //   display: block;
-  //   background-color: #ffffff;
-  //   border-radius: 50px;
-  // }
+  @media (max-width: 900px) {
+    background-color: #ffffff;
+    // border-radius: 50px;
+    max-width: 376px;
+    position: absolute;
+    z-index: 11;
+    padding: 0 20px;
+    left: 0;
+    transition: all .1 ease;
+  }
+}
+
+.menu-santeh {
+  display: none;
+
+  @media (max-width: 900px) {
+    background-color: #ffffff;
+    // border-radius: 50px;
+    max-width: 376px;
+    position: absolute;
+    z-index: 11;
+    padding: 0 20px;
+    left: 0;
+    transition: all .1 ease;
+  }
 }
 
 .menu__top {

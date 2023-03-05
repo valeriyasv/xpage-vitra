@@ -1,7 +1,11 @@
 .santeh-list {
+  display: none;
+}
+
+.active {
   background-color: #ffffff;
   border-top: 1px solid #D9D9D9;
-  display: none;
+  display: block;
 }
 
 .santeh-list__shell {

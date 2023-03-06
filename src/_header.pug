@@ -26,7 +26,10 @@ header.main-header
               p Сантехника
               img(src="img/icons/icon-clip.svg" wigth="8" height="5") 
           li.main-header__nav-item 
-            a(href="#") Плитка
+             a(href="#").main-header__nav-item--hover
+              img(src="img/icons/icon-tile.svg" wigth="20" height="25") 
+              p Плитка
+              img(src="img/icons/icon-clip.svg" wigth="8" height="5") 
           li.main-header__nav-item 
             a(href="#") Коллекции
           li.main-header__nav-item 
@@ -43,3 +46,4 @@ header.main-header
     include menu.pug
     script(src='js/burger.js')
     script(src='js/nav-hover.js')
+    script(src='js/nav-hover-prewiev.js')

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="./css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Vitra</title>
@@ -27,7 +31,8 @@
             <ul class="main-header__nav"> 
               <li class="main-header__nav-item"><a class="main-header__nav-item--hover" href="#"><img src="img/icons/icon-santeh.svg" wigth="20" height="25">
                   <p>Сантехника</p><img src="img/icons/icon-clip.svg" wigth="8" height="5"></a></li>
-              <li class="main-header__nav-item"> <a href="#">Плитка</a></li>
+              <li class="main-header__nav-item"> <a class="main-header__nav-item--hover" href="#"><img src="img/icons/icon-tile.svg" wigth="20" height="25">
+                  <p>Плитка</p><img src="img/icons/icon-clip.svg" wigth="8" height="5"></a></li>
               <li class="main-header__nav-item"> <a href="#">Коллекции</a></li>
               <li class="main-header__nav-item"> <a href="#">Идеи</a></li>
               <li class="main-header__nav-item"> <a href="#">О компании</a></li>
@@ -72,6 +77,7 @@
         </div>
         <script src="js/burger.js"></script>
         <script src="js/nav-hover.js"></script>
+        <script src="js/nav-hover-prewiev.js"></script>
       </div>
     </header>
     <div class="santeh-list"> 
@@ -83,23 +89,28 @@
                   <p>Сантехника для ванной </p></a></li>
               <li> <a href="#">Мебель для ванной</a></li>
               <li> <a href="#">Смесители</a></li>
-              <li> <a href="#">Инсталляции</a></li>
+              <li><a href="#">Инсталляции</a></li>
               <li> <a href="#">Ванны</a></li>
               <li> <a href="#">Душевые системы</a></li>
               <li> <a href="#">Аксессуары</a></li>
             </ul>
             <ul class="santeh-list__nav-common"> 
-              <li> <a href="#">Все товары</a></li>
-              <li> <a href="#">Унитазы</a></li>
-              <li> <a href="#">Раковины</a></li>
-              <li> <a href="#">Писсуары</a></li>
-              <li> <a href="#">Биде</a></li>
-              <li> <a href="#">Комплектующие</a></li>
-              <li> <a href="#">Пьедесталы</a></li>
+              <li>Все товары</li>
+              <li data-name="унитазы">Унитазы</li>
+              <li data-name="раковины">Раковины</li>
+              <li data-name="писсуары">Писсуары</li>
+              <li data-name="биде">Биде</li>
+              <li data-name="комплектующие">Комплектующие</li>
+              <li data-name="пьедесталы">Пьедесталы</li>
             </ul>
           </div>
           <div class="santeh-list__prewiev">
-            <div class="santeh-list__prewiev-pict"> <img class="santeh-list__prewiev-img" src="img/hover.jpg" alt=""></div>
+            <div class="santeh-list__prewiev-pict" data-name="унитазы"><img class="santeh-list__prewiev-img" src="img/tualet.jpg" alt=""></div>
+            <div class="santeh-list__prewiev-pict" data-name="раковины"><img class="santeh-list__prewiev-img" src="img/photo1.jpg" alt=""></div>
+            <div class="santeh-list__prewiev-pict" data-name="писсуары"><img class="santeh-list__prewiev-img" src="img/photo-main-san.jpg" alt=""></div>
+            <div class="santeh-list__prewiev-pict" data-name="биде"><img class="santeh-list__prewiev-img" src="img/tualet.jpg" alt=""></div>
+            <div class="santeh-list__prewiev-pict" data-name="комплектующие"><img class="santeh-list__prewiev-img" src="img/tualet.jpg" alt=""></div>
+            <div class="santeh-list__prewiev-pict" data-name="пьедесталы"><img class="santeh-list__prewiev-img" src="img/tualet.jpg" alt=""></div>
           </div>
         </div>
       </div>
@@ -120,8 +131,16 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide"><img src="img/photo1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/photo2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/photo1.jpg" alt="">
+          <div class="swiper-slide__content">
+            <p>VitrA Tiles at Cersaie Exhibition </p><span>Встречайте новое поступление<br>плитки и сантехники →</span>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="img/photo2.jpg" alt="">
+          <div class="swiper-slide__content">
+            <p>VitrA Tiles at Cersaie Exhibition </p><span>Встречайте новое поступление<br>плитки и сантехники →</span>
+          </div>
+        </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -143,26 +162,84 @@
               <picture>
                 <source media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg"><img class="collection__photo" src="img/photo-collection.jpg" alt="">
               </picture>
-              <div class="collection__btn-plus"><a class="black" href="#"><img src="img/icons/icon-plus-black.svg" width="27" height="27" alt=""></a><a class="black" href="#"><img src="img/icons/icon-plus-black.svg" width="27" height="27" alt=""></a><a class="black" href="#"><img src="img/icons/icon-plus-black.svg" width="27" height="27" alt=""></a><a class="red" href="#"><img src="img/icons/icon-plus-red.svg" width="47" height="47" alt=""></a></div>
+              <div class="collection__btn-plus">
+                <button class="black" data-name="туалет"> </button>
+                <button class="black" data-name="шкаф"> </button>
+                <button class="black" data-name="ванна"></button>
+                <button class="black" data-name="раковина"></button>
+              </div>
             </div>
           </div>
-          <article class="card">
-            <div class="card__image"><img class="card__pict" src="img/photo-card.jpg" width="440" height="440">
-              <div class="card__badges"> 
-                <div class="card__badges-bests">Бестселлер</div>
-                <div class="card__badges-new">New</div>
-              </div>
-            </div>
-            <div class="card__content">
-              <div class="card__desc">
-                <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
-                <div class="card__bottom">
-                  <p class="card__price">2 540 Р.</p>
-                  <button class="card__button">Купить </button>
+          <div class="cards">
+            <article class="card" data-name="туалет">
+              <div class="card__image"><img class="card__pict" src="img/photo-card2.jpg" width="440" height="440">
+                <div class="card__badges"> 
+                  <div class="card__badges-bests">Бестселлер</div>
+                  <div class="card__badges-new">New</div>
                 </div>
               </div>
-            </div>
-          </article>
+              <div class="card__content">
+                <div class="card__desc">
+                  <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                  <div class="card__bottom">
+                    <p class="card__price">2 540 Р.</p>
+                    <button class="card__button">Купить </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-name="шкаф">
+              <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
+                <div class="card__badges"> 
+                  <div class="card__badges-bests">Бестселлер</div>
+                  <div class="card__badges-new">New</div>
+                </div>
+              </div>
+              <div class="card__content">
+                <div class="card__desc">
+                  <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                  <div class="card__bottom">
+                    <p class="card__price">2 540 Р.</p>
+                    <button class="card__button">Купить </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-name="ванна">
+              <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
+                <div class="card__badges"> 
+                  <div class="card__badges-bests">Бестселлер</div>
+                  <div class="card__badges-new">New</div>
+                </div>
+              </div>
+              <div class="card__content">
+                <div class="card__desc">
+                  <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                  <div class="card__bottom">
+                    <p class="card__price">2 540 Р.</p>
+                    <button class="card__button">Купить </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card" data-name="раковина">
+              <div class="card__image"><img class="card__pict" src="img/photo-card.jpg" width="440" height="440">
+                <div class="card__badges"> 
+                  <div class="card__badges-bests">Бестселлер</div>
+                  <div class="card__badges-new">New</div>
+                </div>
+              </div>
+              <div class="card__content">
+                <div class="card__desc">
+                  <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                  <div class="card__bottom">
+                    <p class="card__price">2 540 Р.</p>
+                    <button class="card__button">Купить</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </div>
@@ -235,7 +312,7 @@
             <li class="footer__nav-item footer__nav-item--block"><a href="#">FAQ</a></li>
           </ul>
           <ul class="footer__nav-list">
-            <li class="footer__nav-item footer__nav-item--title">О компании —</li>
+            <li class="footer__nav-item footer__nav-item--title">О компании<span class="hidden"> -</span></li>
             <li class="footer__nav-item"> <a href="#">История Vitra</a></li>
             <li class="footer__nav-item"> <a href="#">Дизайн</a></li>
             <li class="footer__nav-item"> <a href="#">Инновации</a></li>
@@ -245,7 +322,7 @@
             <li class="footer__nav-item"><a href="#">Контакты</a></li>
           </ul>
           <ul class="footer__nav-list">
-            <li class="footer__nav-item footer__nav-item--title">Все продукты —</li>
+            <li class="footer__nav-item footer__nav-item--title">Все продукты<span class="hidden"> -</span></li>
             <li class="footer__nav-item"><a href="#">Сантехника для ванной</a></li>
             <li class="footer__nav-item"><a href="#">Плитка</a></li>
             <li class="footer__nav-item"><a href="#">Смесители</a></li>
@@ -256,7 +333,7 @@
             <li class="footer__nav-item"><a href="#">Ванны</a></li>
           </ul>
           <ul class="footer__nav-list">
-            <li class="footer__nav-item footer__nav-item--title">Шоурумы —</li>
+            <li class="footer__nav-item footer__nav-item--title">Шоурумы <span class="hidden"> -</span></li>
             <li class="footer__nav-item"><a href="#">Диджитал шоурум<br>сантехники</a></li>
             <li class="footer__nav-item"><a href="#">Диджитал шоурум плитки</a></li>
             <li class="footer__nav-item"><a href="#">Шоурум плитки</a></li>
@@ -276,5 +353,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/nav-hover.js"></script>
+    <script src="js/nav-hover-prewiev.js"></script>
+    <script src="js/cards.js"></script>
   </body>
 </html>

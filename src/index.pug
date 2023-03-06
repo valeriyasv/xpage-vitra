@@ -4,6 +4,10 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="icon" href="favicon.ico")
+    link(rel="icon" href="img/favicons/icon.svg" type="image/svg+xml")
+    link(rel="apple-touch-icon" href="img/favicons/apple.png")
+    link(rel="manifest" href="manifest.webmanifest")
     link(href="./css/style.css" rel="stylesheet")
     link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
     title Vitra
@@ -27,8 +31,14 @@ html(lang="ru")
                 span Оцените возможности<br> керамогранита с новой<br>серией MIX 2020 →
         .swiper-slide
            img(src="img/photo1.jpg", alt="")
+           .swiper-slide__content
+              p VitrA Tiles at Cersaie Exhibition 
+              span Встречайте новое поступление<br>плитки и сантехники →
         .swiper-slide
            img(src="img/photo2.jpg", alt="")
+           .swiper-slide__content
+              p VitrA Tiles at Cersaie Exhibition 
+              span Встречайте новое поступление<br>плитки и сантехники →
       .swiper-pagination
 
     .collection 
@@ -51,27 +61,64 @@ html(lang="ru")
                 source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
                 img(src="img/photo-collection.jpg", alt="").collection__photo
               .collection__btn-plus
-                a(href="#").black
-                  img(src="img/icons/icon-plus-black.svg", width="27" height="27" alt="")
-                a(href="#").black
-                  img(src="img/icons/icon-plus-black.svg", width="27" height="27" alt="")
-                a(href="#").black
-                  img(src="img/icons/icon-plus-black.svg", width="27" height="27" alt="")
-                a(href="#").red
-                  img(src="img/icons/icon-plus-red.svg", width="47" height="47" alt="")
-          article.card
-            .card__image
-              img(src="img/photo-card.jpg" width="440" height="440").card__pict
-              .card__badges 
-                .card__badges-bests Бестселлер
-                .card__badges-new New
-            .card__content
-              .card__desc
-                h3.card__title Liquid Toilet Brush Holder
-                span.card__vendor Арт. 7670B003-7211
-                .card__bottom
-                  p.card__price 2 540 Р.
-                  button.card__button Купить 
+                button(data-name="туалет").black 
+                button(data-name="шкаф").black 
+                button(data-name="ванна").black
+                button(data-name="раковина").black
+          .cards
+
+            article.card(data-name="туалет")
+              .card__image
+                img(src="img/photo-card2.jpg" width="440" height="440").card__pict
+                .card__badges 
+                  .card__badges-bests Бестселлер
+                  .card__badges-new New
+              .card__content
+                .card__desc
+                  h3.card__title Liquid Toilet Brush Holder
+                  span.card__vendor Арт. 7670B003-7211
+                  .card__bottom
+                    p.card__price 2 540 Р.
+                    button.card__button Купить 
+            article.card(data-name="шкаф")
+              .card__image
+                img(src="img/photo-card3.jpg" width="440" height="440").card__pict
+                .card__badges 
+                  .card__badges-bests Бестселлер
+                  .card__badges-new New
+              .card__content
+                .card__desc
+                  h3.card__title Liquid Toilet Brush Holder
+                  span.card__vendor Арт. 7670B003-7211
+                  .card__bottom
+                    p.card__price 2 540 Р.
+                    button.card__button Купить 
+            article.card(data-name="ванна")
+              .card__image
+                img(src="img/photo-card3.jpg" width="440" height="440").card__pict
+                .card__badges 
+                  .card__badges-bests Бестселлер
+                  .card__badges-new New
+              .card__content
+                .card__desc
+                  h3.card__title Liquid Toilet Brush Holder
+                  span.card__vendor Арт. 7670B003-7211
+                  .card__bottom
+                    p.card__price 2 540 Р.
+                    button.card__button Купить 
+            article.card(data-name="раковина")
+              .card__image
+                img(src="img/photo-card.jpg" width="440" height="440").card__pict
+                .card__badges 
+                  .card__badges-bests Бестселлер
+                  .card__badges-new New
+              .card__content
+                .card__desc
+                  h3.card__title Liquid Toilet Brush Holder
+                  span.card__vendor Арт. 7670B003-7211
+                  .card__bottom
+                    p.card__price 2 540 Р.
+                    button.card__button Купить
     .ideas 
       .wrapper
         h2.ideas__title Идеи
@@ -112,3 +159,5 @@ html(lang="ru")
     script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
     script(src='js/script.js')
     script(src='js/nav-hover.js')
+    script(src='js/nav-hover-prewiev.js')
+    script(src='js/cards.js')

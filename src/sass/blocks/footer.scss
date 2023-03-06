@@ -187,3 +187,9 @@
     z-index: 8;
   }
 }
+
+.hidden {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}

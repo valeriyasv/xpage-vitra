@@ -1,5 +1,9 @@
 .card {
   display: none;
+
+  // &--block {
+  //   display: block;
+  // }
 }
 
 .card-active {
@@ -51,6 +55,11 @@
   height: 40px;
   color: #ffffff;
   font-size: 15px;
+
+  &:hover {
+    background-color: #CD100A;
+    border-radius: 20px;
+  }
 }
 
 .card__bottom {

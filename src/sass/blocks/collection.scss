@@ -202,3 +202,32 @@
     position: relative;
   }
 }
+
+.collection__btn {
+  position: relative;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+
+  &::after {
+    content: '<';
+    position: absolute;
+    font-size: 30px;
+    font-family: ui-monospace;
+    font-weight: 100;
+    transform: translate(-50%,-50%);
+  }
+
+  &--next {
+    transform: rotate(180deg);
+    margin-left: 5px;
+  }
+
+  &:hover {
+    background-color: #B01E19;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}

@@ -16,7 +16,16 @@
   }
 }
 
+.ideas__pict {
+  overflow: hidden;
+}
+
 .ideas__img {
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.25s;
+  }
+
   @media (max-width: $tablet-width) {
     display: block;
     width: 100%;
@@ -32,6 +41,7 @@
 .ideas__nav {
   display: flex;
   flex-direction: row;
+  flex-shrink: 0;
 }
 
 .ideas__nav-bottom {
@@ -43,8 +53,8 @@
   margin-bottom: 20px;
   padding-top: 40px;
 
-  @media (max-width: 960px) {
-    overflow: hidden;
+  @media (max-width: 900px) {
+    overflow: scroll;
     padding-top: 25px;
   }
 }
@@ -72,6 +82,12 @@
     .ideas__img {
       width: 100%;
       object-fit: contain;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.25s;
+        overflow: hidden;
+      }
     }
 
     @media (max-width: 768px) {

@@ -1,6 +1,6 @@
 .swiper-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   border-bottom: 5px solid #B01E19;
   position: relative;
   overflow: hidden;
@@ -119,3 +119,25 @@
     }
   }
 }
+
+.swiper-slide__main-santeh {
+  cursor: pointer;
+}
+
+.swiper-slide__main-santeh:hover,
+.swiper-slide__main-tile:hover {
+  
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      opacity: 0.2;
+      z-index: 88;
+    }
+}
+
+

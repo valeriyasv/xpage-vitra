@@ -9,9 +9,9 @@ btnPlus.addEventListener('click', (e) => {
     item.classList.remove('card-active')
   })
   itemMenuImage.classList.add('card-active')
-  const activeBtn = document.querySelector(`.black[data-name=${e.target.dataset.name}]`);
+  const activeBtn = document.querySelector(`.collection__btn-plus-black[data-name=${e.target.dataset.name}]`);
 
-  const allBtn = document.querySelectorAll('.black');
+  const allBtn = document.querySelectorAll('.collection__btn-plus-black');
   allBtn.forEach(item => {
     item.classList.remove('black-active')
   })

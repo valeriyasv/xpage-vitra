@@ -20,15 +20,17 @@ html(lang="ru")
         .swiper-slide
           .swiper-slide__main
             .swiper-slide__main-santeh
-              img(src="img/photo-main-san.jpg", alt="")
-              .swiper-slide__main-santeh-content
-                p Сантехника
-                span Встречайте новое<br>поступление сантехники<br>из натурального камня →
+              a(href="#")
+                img(src="img/photo-main-san.jpg", alt="")
+                .swiper-slide__main-santeh-content
+                  p Сантехника
+                  span Встречайте новое<br>поступление сантехники<br>из натурального камня →
             .swiper-slide__main-tile
-              img(src="img/photo-main-tile.jpg", alt="")
-              .swiper-slide__main-tile-content
-                p Плитка
-                span Оцените возможности<br> керамогранита с новой<br>серией MIX 2020 →
+              a(href="#")
+                img(src="img/photo-main-tile.jpg", alt="")
+                .swiper-slide__main-tile-content
+                  p Плитка
+                  span Оцените возможности<br> керамогранита с новой<br>серией MIX 2020 →
         .swiper-slide
            img(src="img/photo1.jpg", alt="")
            .swiper-slide__content
@@ -47,8 +49,10 @@ html(lang="ru")
           .collection__txt
             h2.collection__title Коллекции
             ul.collection__nav
-              li.collection__nav-item Коллекции сантехники →
-              li.collection__nav-item Коллекции плитки →
+              li.collection__nav-item
+                a(href='#') Коллекции сантехники →
+              li.collection__nav-item
+                a(href='#') Коллекции плитки →
           .collection__arr
             button.collection__btn
             button.collection__btn.collection__btn--next
@@ -59,10 +63,10 @@ html(lang="ru")
                 source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
                 img(src="img/photo-collection.jpg", alt="").collection__photo
               .collection__btn-plus
-                button(data-name="туалет").black 
-                button(data-name="шкаф").black 
-                button(data-name="ванна").black
-                button(data-name="раковина").black.black-active
+                button(data-name="туалет").collection__btn-plus-black 
+                button(data-name="шкаф").collection__btn-plus-black 
+                button(data-name="ванна").collection__btn-plus-black 
+                button(data-name="раковина").collection__btn-plus-black.black-active
           .cards
 
             article.card(data-name="туалет")
@@ -122,11 +126,16 @@ html(lang="ru")
         h2.ideas__title Идеи
         .ideas__nav-bottom
           ul.ideas__nav 
-            li.ideas__nav-item  Решения для ванной
-            li.ideas__nav-item  Дизайн туалета
-            li.ideas__nav-item  Твой стиль
-            li.ideas__nav-item Дизайн ванной
-            li.ideas__nav-item Экономия воды
+            li.ideas__nav-item  
+              a(href="#") Решения для ванной
+            li.ideas__nav-item  
+              a(href="#") Дизайн туалета
+            li.ideas__nav-item  
+              a(href="#") Твой стиль
+            li.ideas__nav-item 
+              a(href="#") Дизайн ванной
+            li.ideas__nav-item 
+              a(href="#") Экономия воды
           a(href="#").ideas__all Все идеи →
         .ideas__gallery 
           .ideas__card.ideas__card--row 

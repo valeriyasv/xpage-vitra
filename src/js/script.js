@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  // loop: true,
+  loop: true,
   breakpoints: {
     320: {
       slidesPerView: 1,

@@ -4,43 +4,55 @@ header.main-header
       .main-header__top
         .logo
           a(href='index.html') 
-            img(src="img/icons/icon-logo.svg" wigth="135" height="40")
+            svg(width='135' height='45')
+              use(xlink:href="img/sprite.svg#icon-logo")
         ul.main-header__options
           li.main-header__options-item
             a(href="#").main-header__options-item--hidden 
-              img(src="img/icons/icon-where.svg" wigth="12" height="13") 
+              svg(width='15' height='13').main-header__icon-town
+                use(xlink:href="img/sprite.svg#icon-where")
               p Москва
           li.main-header__options-item.main-header__options-item--hidden 
             a(href="#") Сервисы
           li.main-header__options-item.main-header__options-item--star
             a(href="#")
-              img(src="img/icons/icon-star.svg" wigth="25" height="25").main-header__options-img
+              svg(width='25' height='25').main-header__options-img
+                use(xlink:href="img/sprite.svg#icon-star")
           li.main-header__options-item.main-header__options-item--arr
             a(href="#")
-              img(src="img/icons/icon-compare.svg" wigth="25" height="25")
+              svg(width='25' height='25')
+                use(xlink:href="img/sprite.svg#icon-compare")
           li.main-header__options-item.main-header__options-item--hidden
             .language
               button.language__ru
                 p.language__name RU
-                img(src="img/icons/icon-clip.svg" wigth="8" height="5")
+                svg(width='10' height='8')
+                  use(xlink:href="img/sprite.svg#icon-clip")
               .language__hidden
                 button.language__en EN
                 button.language__tr TR
-      img(src="img/icons/icon-logo.svg" wigth="135" height="40").main-header__logo
+      svg(width='135' height='40').main-header__logo
+        use(xlink:href="img/sprite.svg#icon-logo")
       nav.main-header__bottom
-        img(src="img/icons/icon-burger.svg" wigth="25" height="25").main-header__burger
-        img(src="img/icons/icon-close.svg" wigth="25" height="25").main-header__burger-close
+        svg(width='25' height='25').main-header__burger
+          use(xlink:href="img/sprite.svg#icon-burger")
+        svg(width='25' height='25').main-header__burger-close
+          use(xlink:href="img/sprite.svg#icon-close")
         ul.main-header__nav 
           li.main-header__nav-item
             a(href="#").main-header__nav-item--hover
-              img(src="img/icons/icon-santeh.svg" wigth="20" height="25") 
+              svg(width='20' height='25')
+                use(xlink:href="img/sprite.svg#icon-santeh") 
               p Сантехника
-              img(src="img/icons/icon-clip.svg" wigth="8" height="5") 
+              svg(width='10' height='8')
+                use(xlink:href="img/sprite.svg#icon-clip")
           li.main-header__nav-item 
              a(href="#").main-header__nav-item--hover
-              img(src="img/icons/icon-tile.svg" wigth="20" height="25") 
+              svg(width='20' height='25')
+                use(xlink:href="img/sprite.svg#icon-tile")
               p Плитка
-              img(src="img/icons/icon-clip.svg" wigth="8" height="5") 
+              svg(width='10' height='8')
+                use(xlink:href="img/sprite.svg#icon-clip")
           li.main-header__nav-item 
             a(href="#") Коллекции
           li.main-header__nav-item 
@@ -49,10 +61,12 @@ header.main-header
             a(href="#") О компании
         .main-header__search
           .main-header__search--icon
-            img(src="img/icons/icon-search.svg" wigth="16" height="16")
+            svg(width='16' height='16')
+              use(xlink:href="img/sprite.svg#icon-search")
             p.main-header__search-item Поиск
           .main-header__search--where
-            img(src="img/icons/icon-map.svg" wigth="11" height="16")
+            svg(width='15' height='16')
+              use(xlink:href="img/sprite.svg#icon-map")
             p.main-header__search-item--map Где купить
     include menu.pug
     script(src='js/burger.js')

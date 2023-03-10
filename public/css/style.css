@@ -143,6 +143,9 @@ body {
 .main-header__options-item:hover:not(:last-child) {
   color: #B49F8C;
 }
+.main-header__options-item:hover:not(:last-child) .main-header__icon-town {
+  color: #B49F8C;
+}
 
 .main-header__nav {
   display: flex;
@@ -280,57 +283,6 @@ body {
 
 .main-header__nav-item:hover {
   border-bottom: 5px solid #B01E19;
-}
-
-.language {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  padding: 8px 11px 9px 16px;
-  border-radius: 5px;
-}
-
-.language__hidden {
-  display: none;
-}
-
-.language:hover {
-  background-color: #F6F4F4;
-}
-.language:hover .language__hidden {
-  display: flex;
-  flex-direction: column;
-}
-.language:hover .language__ru {
-  border-bottom: 1px solid #E6E6E6;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-.language:hover .language__en {
-  padding-bottom: 10px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.language:hover .language__tr {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.language__ru {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.language__ru .language__name {
-  padding-right: 6px;
 }
 
 .swiper-container {
@@ -472,6 +424,19 @@ body {
   background-color: #ffffff;
   opacity: 0.2;
   z-index: 88;
+}
+
+.swiper-container .swiper-button-next {
+  width: 10%;
+  height: 100vh;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+.swiper-container .swiper-button-next:hover {
+  cursor: url("../img/icons/icon-star.svg") auto !important;
 }
 
 .collection {
@@ -693,19 +658,16 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid #000000;
-}
-.collection__btn::after {
-  content: "<";
-  position: absolute;
-  font-size: 30px;
-  font-family: ui-monospace;
-  font-weight: 100;
-  transform: translate(-50%, -50%);
+  border: none;
 }
 .collection__btn--next {
   transform: rotate(180deg);
   margin-left: 5px;
+}
+.collection__btn .collection__btn-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .collection__btn:hover {
   background-color: #B01E19;
@@ -1365,6 +1327,9 @@ body {
   max-width: 225px;
   align-items: baseline;
 }
+.santeh-list__nav-santeh-link:hover {
+  color: #B49F8C;
+}
 
 .santeh-list__prewiev-pict {
   display: none;
@@ -1378,5 +1343,56 @@ body {
   padding-top: 20px;
   width: 100%;
   height: 100%;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 0 11px 9px 16px;
+  border-radius: 5px;
+}
+
+.language__hidden {
+  display: none;
+}
+
+.language:hover {
+  background-color: #F6F4F4;
+}
+.language:hover .language__hidden {
+  display: flex;
+  flex-direction: column;
+}
+.language:hover .language__ru {
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.language:hover .language__en {
+  padding-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.language:hover .language__tr {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.language__ru {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.language__ru .language__name {
+  padding-right: 6px;
 }
 /*# sourceMappingURL=style.css.map */

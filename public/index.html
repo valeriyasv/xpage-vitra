@@ -17,17 +17,32 @@
       <div class="wrapper">
         <div class="main-header__shell">
           <div class="main-header__top">
-            <div class="logo"><a href="index.html"> <img src="img/icons/icon-logo.svg" wigth="135" height="40"></a></div>
+            <div class="logo"><a href="index.html"> 
+                <svg width="135" height="45">
+                  <use xlink:href="img/sprite.svg#icon-logo"></use>
+                </svg></a></div>
             <ul class="main-header__options">
-              <li class="main-header__options-item"><a class="main-header__options-item--hidden" href="#"> <img src="img/icons/icon-where.svg" wigth="12" height="13">
+              <li class="main-header__options-item"><a class="main-header__options-item--hidden" href="#"> 
+                  <svg class="main-header__icon-town" width="15" height="13">
+                    <use xlink:href="img/sprite.svg#icon-where"></use>
+                  </svg>
                   <p>Москва</p></a></li>
               <li class="main-header__options-item main-header__options-item--hidden"> <a href="#">Сервисы</a></li>
-              <li class="main-header__options-item main-header__options-item--star"><a href="#"><img class="main-header__options-img" src="img/icons/icon-star.svg" wigth="25" height="25"></a></li>
-              <li class="main-header__options-item main-header__options-item--arr"><a href="#"><img src="img/icons/icon-compare.svg" wigth="25" height="25"></a></li>
+              <li class="main-header__options-item main-header__options-item--star"><a href="#">
+                  <svg class="main-header__options-img" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg></a></li>
+              <li class="main-header__options-item main-header__options-item--arr"><a href="#">
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-compare"></use>
+                  </svg></a></li>
               <li class="main-header__options-item main-header__options-item--hidden">
                 <div class="language">
                   <button class="language__ru">
-                    <p class="language__name">RU</p><img src="img/icons/icon-clip.svg" wigth="8" height="5">
+                    <p class="language__name">RU</p>
+                    <svg width="10" height="8">
+                      <use xlink:href="img/sprite.svg#icon-clip"></use>
+                    </svg>
                   </button>
                   <div class="language__hidden">
                     <button class="language__en">EN</button>
@@ -36,22 +51,49 @@
                 </div>
               </li>
             </ul>
-          </div><img class="main-header__logo" src="img/icons/icon-logo.svg" wigth="135" height="40">
-          <nav class="main-header__bottom"><img class="main-header__burger" src="img/icons/icon-burger.svg" wigth="25" height="25"><img class="main-header__burger-close" src="img/icons/icon-close.svg" wigth="25" height="25">
+          </div>
+          <svg class="main-header__logo" width="135" height="40">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+          <nav class="main-header__bottom">
+            <svg class="main-header__burger" width="25" height="25">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+            <svg class="main-header__burger-close" width="25" height="25">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
             <ul class="main-header__nav"> 
-              <li class="main-header__nav-item"><a class="main-header__nav-item--hover" href="#"><img src="img/icons/icon-santeh.svg" wigth="20" height="25">
-                  <p>Сантехника</p><img src="img/icons/icon-clip.svg" wigth="8" height="5"></a></li>
-              <li class="main-header__nav-item"> <a class="main-header__nav-item--hover" href="#"><img src="img/icons/icon-tile.svg" wigth="20" height="25">
-                  <p>Плитка</p><img src="img/icons/icon-clip.svg" wigth="8" height="5"></a></li>
+              <li class="main-header__nav-item"><a class="main-header__nav-item--hover" href="#">
+                  <svg width="20" height="25">
+                    <use xlink:href="img/sprite.svg#icon-santeh"> </use>
+                  </svg>
+                  <p>Сантехника</p>
+                  <svg width="10" height="8">
+                    <use xlink:href="img/sprite.svg#icon-clip"></use>
+                  </svg></a></li>
+              <li class="main-header__nav-item"> <a class="main-header__nav-item--hover" href="#">
+                  <svg width="20" height="25">
+                    <use xlink:href="img/sprite.svg#icon-tile"></use>
+                  </svg>
+                  <p>Плитка</p>
+                  <svg width="10" height="8">
+                    <use xlink:href="img/sprite.svg#icon-clip"></use>
+                  </svg></a></li>
               <li class="main-header__nav-item"> <a href="#">Коллекции</a></li>
               <li class="main-header__nav-item"> <a href="#">Идеи</a></li>
               <li class="main-header__nav-item"> <a href="#">О компании</a></li>
             </ul>
             <div class="main-header__search">
-              <div class="main-header__search--icon"><img src="img/icons/icon-search.svg" wigth="16" height="16">
+              <div class="main-header__search--icon">
+                <svg width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
                 <p class="main-header__search-item">Поиск</p>
               </div>
-              <div class="main-header__search--where"><img src="img/icons/icon-map.svg" wigth="11" height="16">
+              <div class="main-header__search--where">
+                <svg width="15" height="16">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
                 <p class="main-header__search-item--map">Где купить</p>
               </div>
             </div>
@@ -95,7 +137,10 @@
         <div class="santeh-list__shell">
           <div class="santeh-list__nav"> 
             <ul class="santeh-list__nav-santeh">
-              <li><a class="santeh-list__nav-santeh-link" href="#"><img src="img/icons/icon-hover-arr.svg" alt="">
+              <li><a class="santeh-list__nav-santeh-link" href="#">
+                  <svg width="15" height="11">
+                    <use xlink:href="img/sprite.svg#icon-hover-arr"></use>
+                  </svg>
                   <p>Сантехника для ванной </p></a></li>
               <li> <a href="#">Мебель для ванной</a></li>
               <li> <a href="#">Смесители</a></li>
@@ -166,8 +211,16 @@
             </ul>
           </div>
           <div class="collection__arr">
-            <button class="collection__btn"></button>
-            <button class="collection__btn collection__btn--next"></button>
+            <button class="collection__btn">
+              <svg class="collection__btn-icon" width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-arr-button"></use>
+              </svg>
+            </button>
+            <button class="collection__btn collection__btn--next">
+              <svg class="collection__btn-icon" width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-arr-button"></use>
+              </svg>
+            </button>
           </div>
         </div>
         <div class="collection__images">
@@ -364,8 +417,23 @@
             <li class="footer__nav-item"><a href="#">Шоурум плитки</a></li>
           </ul>
         </div>
-        <div class="footer__social"> <img class="footer__social-logo" src="img/icons/icon-footer-img.svg" alt="">
-          <div class="footer__social-list"><a class="footer__social-icon" href="#"><img src="img/icons/icon-insta.svg" alt=""></a><a class="footer__social-icon" href="#"> <img src="img/icons/icon-facebook.svg" alt=""></a><a class="footer__social-icon" href="#"> <img src="img/icons/icon-vk.svg" alt=""></a><a class="footer__social-icon" href="#"> <img src="img/icons/icon-youtube.svg" alt=""></a></div>
+        <div class="footer__social"> 
+          <svg class="footer__social-logo">
+            <use xlink:href="img/sprite.svg#icon-footer-img"></use>
+          </svg>
+          <div class="footer__social-list"><a class="footer__social-icon" href="#">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg></a><a class="footer__social-icon" href="#"> 
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg></a><a class="footer__social-icon" href="#"> 
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg></a><a class="footer__social-icon" href="#"> 
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg></a></div>
         </div>
         <div class="footer__bottom"> 
           <div class="footer__bottom-privacy">

@@ -2,9 +2,9 @@ import gulp from 'gulp';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import pug from 'gulp-pug';
-// import rename from 'gulp-rename';
-// import svgstore from 'gulp-svgstore';
-// import svgo from 'gulp-svgo';
+import rename from 'gulp-rename';
+import svgstore from 'gulp-svgstore';
+import svgo from 'gulp-svgo';
 import plumber from 'gulp-plumber';
 import browser from 'browser-sync';
 import terser from 'gulp-terser';
@@ -55,13 +55,13 @@ const copyImages = () => {
   .pipe(gulp.dest('public/img'))
 }
 
-// const sprite = () => {
-//   return gulp.src('src/img/icons/*.svg')
-//   .pipe(svgo())
-// //   .pipe(svgstore())
-//   // .pipe(rename('sprite.svg'))
-//   .pipe(gulp.dest('src/img'));
-//   }
+const sprite = () => {
+  return gulp.src('src/img/icons/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore())
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('src/img'));
+  }
 
 const scripts = () => {
   return gulp.src('src/js/*.js')
@@ -87,7 +87,7 @@ export const build = gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-//   sprite,
+  sprite,
   styles,
   gulpPug,
   ),
@@ -105,7 +105,7 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     styles,
-    // sprite
+    sprite,
     scripts),
     gulp.series(
       server,

@@ -71,16 +71,21 @@ footer.footer
         li.footer__nav-item
           a(href="#") Шоурум плитки
     .footer__social 
-      img(src="img/icons/icon-footer-img.svg", alt="").footer__social-logo
+      svg.footer__social-logo
+        use(xlink:href="img/sprite.svg#icon-footer-img")
       .footer__social-list
         a(href='#').footer__social-icon
-          img(src="img/icons/icon-insta.svg", alt="")
+          svg(width='25' height='25')
+            use(xlink:href="img/sprite.svg#icon-insta")
         a(href='#').footer__social-icon 
-          img(src="img/icons/icon-facebook.svg", alt="")
+          svg(width='25' height='25')
+            use(xlink:href="img/sprite.svg#icon-facebook")
         a(href='#').footer__social-icon 
-          img(src="img/icons/icon-vk.svg", alt="")
+          svg(width='25' height='25')
+            use(xlink:href="img/sprite.svg#icon-vk")
         a(href='#').footer__social-icon 
-          img(src="img/icons/icon-youtube.svg", alt="")
+          svg(width='25' height='25')
+            use(xlink:href="img/sprite.svg#icon-youtube")
     .footer__bottom 
       .footer__bottom-privacy
         p Vitra 2021

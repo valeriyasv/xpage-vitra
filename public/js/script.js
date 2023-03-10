@@ -1,1 +1,1 @@
-const swiper=new Swiper(".swiper-container",{pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{320:{slidesPerView:1,spaceBetween:1},768:{slidesPerView:1.1,spaceBetween:1}},navigation:{nextEl:".swiper-button-next"}});console.log(swiper);
+const swiper=new Swiper(".swiper-container",{pagination:{el:".swiper-pagination",clickable:!0},loop:!0,breakpoints:{320:{slidesPerView:1,spaceBetween:1},768:{slidesPerView:1.1,spaceBetween:1}},navigation:{nextEl:".swiper-button-next"}});console.log(swiper);

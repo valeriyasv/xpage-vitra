@@ -11,7 +11,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: $white-color;
 
   @media (max-width: 900px) {
     position: absolute;
@@ -53,11 +53,11 @@
   border: none;
   width: 210px;
   height: 40px;
-  color: #ffffff;
+  color: $white-color;
   font-size: 15px;
 
   &:hover {
-    background-color: #CD100A;
+    background-color: $hover-button-color;
     border-radius: 20px;
   }
 }
@@ -74,7 +74,7 @@
   width: 117px;
   height: 45px;
   background-color: #8FA5A2;
-  color: #ffffff;
+  color: $white-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,7 @@
   width: 61px;
   height: 45px;
   background-color: #114C7E;
-  color: #ffffff;
+  color: $white-color;
   display: flex;
   align-items: center;
   justify-content: center;

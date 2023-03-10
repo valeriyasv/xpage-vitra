@@ -2,7 +2,7 @@
   display: none;
   
   @media (max-width: 900px) {
-    background-color: #ffffff;
+    background-color: $white-color;
     // border-radius: 50px;
     max-width: 376px;
     position: absolute;
@@ -18,7 +18,7 @@
   display: none;
 
   @media (max-width: 900px) {
-    background-color: #ffffff;
+    background-color: $white-color;
     // border-radius: 50px;
     max-width: 376px;
     position: absolute;

@@ -203,7 +203,6 @@
   background-color: transparent;
   padding: 8px 11px 9px 16px;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .language__hidden {
@@ -214,7 +213,8 @@
   background-color: #F6F4F4;
 
   .language__hidden {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .language__ru {
@@ -225,6 +225,15 @@
 
   .language__en {
     padding-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .language__tr {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 }
 
@@ -233,6 +242,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
   .language__name {
     padding-right: 6px;

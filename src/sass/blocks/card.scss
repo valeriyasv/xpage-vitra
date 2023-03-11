@@ -17,6 +17,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    padding: 0 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
 }
 
@@ -106,4 +109,28 @@
 
   grid-column-start: 7;
   grid-column-end: 10;
+}
+
+.card__icons {
+  display: none;
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    .main-header__options-img {
+      padding: 0;
+      margin: 0 0 20px 0;
+      border: none;
+    }
+  }
+}
+
+.card__image {
+  @media (max-width: 900px) {
+    position: relative;
+  }
 }

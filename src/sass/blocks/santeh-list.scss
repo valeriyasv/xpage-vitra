@@ -10,6 +10,8 @@
   position: absolute;
   left: 0;
   right: 0;
+  height: 350px;
+  transition: 0.9 s;
 }
 
 .santeh-list__shell {
@@ -32,6 +34,7 @@
 .santeh-list__nav-common {
   padding-left: 20px;
   border-left: 1px solid #000000;
+  transition: 0.3px;
 
   li {
     padding-bottom: 8px;

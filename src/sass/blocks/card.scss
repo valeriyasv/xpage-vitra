@@ -1,9 +1,5 @@
 .card {
   display: none;
-
-  // &--block {
-  //   display: block;
-  // }
 }
 
 .card-active {
@@ -20,6 +16,7 @@
     padding: 0 40px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    height: 100vh;
   }
 }
 
@@ -58,10 +55,15 @@
   height: 40px;
   color: $white-color;
   font-size: 15px;
+  transition: 0.2s;
 
   &:hover {
     background-color: $hover-button-color;
     border-radius: 20px;
+  }
+  
+  @media (max-width: 900px) {
+    width: 145px;
   }
 }
 
@@ -134,3 +136,4 @@
     position: relative;
   }
 }
+

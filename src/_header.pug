@@ -16,8 +16,9 @@ header.main-header
             a(href="#") Сервисы
           li.main-header__options-item.main-header__options-item--star
             a(href="#")
-            svg(width='25' height='25').main-header__options-img
-              use(xlink:href="img/sprite.svg#icon-star")
+            .main-header__options-img
+              svg(width='25' height='25')
+                use(xlink:href="img/sprite.svg#icon-star")
           li.main-header__options-item.main-header__options-item--arr
             a(href="#")
             svg(width='25' height='25')
@@ -34,10 +35,12 @@ header.main-header
       svg(width='135' height='40').main-header__logo
         use(xlink:href="img/sprite.svg#icon-logo")
       nav.main-header__bottom
-        svg(width='25' height='25').main-header__burger
-          use(xlink:href="img/sprite.svg#icon-burger")
-        svg(width='25' height='25').main-header__burger-close
-          use(xlink:href="img/sprite.svg#icon-close")
+        .main-header__burger
+          svg(width='25' height='25')
+            use(xlink:href="img/sprite.svg#icon-burger")
+        .main-header__burger-close
+          svg(width='25' height='25')
+            use(xlink:href="img/sprite.svg#icon-close")
         ul.main-header__nav 
           li.main-header__nav-item
             a(href="#").main-header__nav-item--hover
@@ -53,18 +56,20 @@ header.main-header
               p Плитка
               svg(width='10' height='8')
                 use(xlink:href="img/sprite.svg#icon-clip")
-          li.main-header__nav-item 
+          li.main-header__nav-item
             a(href="#") Коллекции
-          li.main-header__nav-item 
+          li.main-header__nav-item
             a(href="#") Идеи
-          li.main-header__nav-item 
+          li.main-header__nav-item
             a(href="#") О компании
         .main-header__search
           .main-header__search--icon
-            svg(width='16' height='16')
-              use(xlink:href="img/sprite.svg#icon-search")
-            p.main-header__search-item Поиск
-          .main-header__search--where
+            input(type="text").main-header__search-text
+            a(href='#').main-header__search-btn 
+              svg(width='16' height='16')
+                use(xlink:href="img/sprite.svg#icon-search")
+              p Поиск
+          a(href='#').main-header__search--where
             svg(width='15' height='16')
               use(xlink:href="img/sprite.svg#icon-map")
             p.main-header__search-item--map Где купить

@@ -62,6 +62,7 @@
 .ideas__nav-item {
   padding-right: 30px;
   font-size: 16px;
+  transition: 0.3s;
 
   @media (max-width: 960px) {
    flex-shrink: 0;
@@ -138,6 +139,10 @@
 //   grid-auto-rows: 100px;
 // }
 
+.ideas__img {
+  transition: 0.3s;
+  cursor: pointer;
+}
 
 .ideas__row {
   display: grid;
@@ -165,6 +170,7 @@
 
 .ideas__all {
   flex-shrink: 0;
+  transition: 0.2s;
 
   &:hover {
     color: $hover-color;

@@ -45,6 +45,7 @@
 .santeh-list__nav-santeh {
   li {
     padding-bottom: 8px;
+    transition: 0.3s;
 
     &:hover {
       color: $hover-color;
@@ -80,5 +81,6 @@
 .santeh-list__nav-common {
   li {
     cursor: pointer;
+    transition: 0.3s;
   }
 }

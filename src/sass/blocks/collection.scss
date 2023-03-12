@@ -17,6 +17,7 @@
 
 .collection__nav-item {
   padding-right: 40px;
+  transition: 0.2s;
 
   &:hover {
     color: $hover-color;
@@ -215,16 +216,6 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  // border: 1px solid #000000;
-
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   background-image: url('../img/icons/icon-arr-button.svg');
-  //   width: 8px;
-  //   height: 16px;
-  //   transform: translate(-50%,-50%);
-  // }
 
   &--next {
     transform: rotate(180deg);
@@ -235,11 +226,11 @@
     position: absolute;
     top: 0;
     left: 0;
+    transition: 0.2s;
   }
 
   &:hover {
     background-color: $main-border-color;
     color: $white-color;
-    border-color: $white-color;
   }
 }

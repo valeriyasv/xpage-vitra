@@ -116,6 +116,7 @@ body {
   display: flex;
   align-items: center;
   max-height: 25px;
+  transition: 0.2s;
 }
 .main-header__options-item:not(:last-child) {
   padding: 0 20px;
@@ -197,6 +198,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #E6E6E6;
+  transition: 0.3s;
 }
 .main-header__search--where {
   display: flex;
@@ -207,6 +214,41 @@ body {
   .main-header__search--where {
     display: none;
   }
+}
+
+.main-header__search-btn {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-header__search-btn p {
+  margin-left: 10px;
+}
+
+.main-header__search-text {
+  border: none;
+  outline: none;
+  float: left;
+  background-color: transparent;
+  width: 0px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.main-header__search--icon:hover > .main-header__search-text {
+  width: 200px;
+  background-color: #f2f2f2;
+}
+
+.main-header__search--icon:hover > .main-header__search-btn p {
+  display: none;
+}
+
+.main-header__search--icon:hover {
+  background-color: #f2f2f2;
+  border-radius: 40px;
+  padding: 0 10px;
 }
 
 .main-header__search-item {
@@ -279,6 +321,7 @@ body {
 
 .main-header__nav-item {
   padding-bottom: 20px;
+  transition: 0.2s;
 }
 
 .main-header__nav-item:hover {
@@ -482,6 +525,7 @@ body {
 
 .collection__nav-item {
   padding-right: 40px;
+  transition: 0.2s;
 }
 .collection__nav-item:hover {
   color: #B49F8C;
@@ -690,11 +734,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.2s;
 }
 .collection__btn:hover {
   background-color: #B01E19;
   color: #ffffff;
-  border-color: #ffffff;
 }
 
 .card {
@@ -898,6 +942,7 @@ body {
 .ideas__nav-item {
   padding-right: 30px;
   font-size: 16px;
+  transition: 0.3s;
 }
 @media (max-width: 960px) {
   .ideas__nav-item {
@@ -961,6 +1006,11 @@ body {
   }
 }
 
+.ideas__img {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .ideas__row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -987,6 +1037,7 @@ body {
 
 .ideas__all {
   flex-shrink: 0;
+  transition: 0.2s;
 }
 .ideas__all:hover {
   color: #B49F8C;
@@ -1071,6 +1122,7 @@ body {
 
 .footer__nav-item {
   margin-bottom: 8px;
+  transition: 0.2s;
 }
 @media (max-width: 768px) {
   .footer__nav-item {
@@ -1102,7 +1154,12 @@ body {
 }
 
 .footer__social-icon {
+  height: 25px;
   padding-left: 20px;
+  transition: 0.2s;
+}
+.footer__social-icon:hover {
+  color: #B49F8C;
 }
 .footer__social-icon:not(:last-child) {
   border-right: 1px solid #CACACA;
@@ -1166,6 +1223,7 @@ body {
 
 .footer__bottom-privacy-link {
   margin-left: 20px;
+  transition: 0.2s;
 }
 @media (max-width: 768px) {
   .footer__bottom-privacy-link {
@@ -1364,6 +1422,7 @@ body {
 
 .santeh-list__nav-santeh li {
   padding-bottom: 8px;
+  transition: 0.3s;
 }
 .santeh-list__nav-santeh li:hover {
   color: #B49F8C;
@@ -1396,6 +1455,7 @@ body {
 
 .santeh-list__nav-common li {
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .language {
@@ -1406,6 +1466,7 @@ body {
   background-color: transparent;
   padding: 5px 11px 9px 16px;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
 .language__hidden {
@@ -1418,6 +1479,7 @@ body {
 .language:hover .language__hidden {
   display: flex;
   flex-direction: column;
+  transition: 0.5s;
 }
 .language:hover .language__ru {
   border-bottom: 1px solid #E6E6E6;
@@ -1429,11 +1491,13 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 .language:hover .language__tr {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .language__ru {

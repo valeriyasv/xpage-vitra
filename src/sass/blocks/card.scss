@@ -40,7 +40,7 @@
 }
 
 .card__vendor {
-  color: #AEAEAE;
+  color: $color-vendor-card;
   font-size: 16px;
 }
 
@@ -78,7 +78,7 @@
 .card__badges-bests {
   width: 117px;
   height: 45px;
-  background-color: #8FA5A2;
+  background-color: $color-badges-bests;
   color: $white-color;
   display: flex;
   align-items: center;
@@ -88,7 +88,7 @@
 .card__badges-new {
   width: 61px;
   height: 45px;
-  background-color: #114C7E;
+  background-color: $color-badges-new;
   color: $white-color;
   display: flex;
   align-items: center;
@@ -136,4 +136,3 @@
     position: relative;
   }
 }
-

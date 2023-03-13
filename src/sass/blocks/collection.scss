@@ -31,7 +31,7 @@
   align-items: center;
   padding-bottom: 10px;
   margin-bottom: 24px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid $black-color;
 }
 
 .collection__nav {
@@ -99,7 +99,7 @@
 }
 
 .collection__btn-plus-black  {
-  background-color: #000000;
+  background-color: $black-color;
   width: 25px;
   height: 25px;
   border: 2px solid $white-color;

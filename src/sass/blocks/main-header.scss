@@ -5,7 +5,7 @@
   @media (max-width: 900px) {
     padding: 20px 0;
   }
-  // display: none;
+
 }
 
 .main-header__top {
@@ -166,17 +166,17 @@
   cursor: pointer;
 }
 
-.main-header__search--icon:hover > .main-header__search-text {
+.main-header__search--icon:active > .main-header__search-text {
   width: 200px;
-  background-color: #f2f2f2;
+  background-color: $search-back;
 }
 
-.main-header__search--icon:hover > .main-header__search-btn p {
+.main-header__search--icon:active > .main-header__search-btn p {
   display: none;
 }
 
-.main-header__search--icon:hover {
-  background-color: #f2f2f2;
+.main-header__search--icon:active {
+  background-color: $search-back;
   border-radius: 40px;
   padding: 0 10px;
 }

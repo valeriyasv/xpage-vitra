@@ -64,6 +64,10 @@ body {
   overflow-x: hidden;
 }
 
+.html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   padding: 0 15px;
 }
@@ -251,16 +255,16 @@ body {
   cursor: pointer;
 }
 
-.main-header__search--icon:hover > .main-header__search-text {
+.main-header__search--icon:active > .main-header__search-text {
   width: 200px;
   background-color: #f2f2f2;
 }
 
-.main-header__search--icon:hover > .main-header__search-btn p {
+.main-header__search--icon:active > .main-header__search-btn p {
   display: none;
 }
 
-.main-header__search--icon:hover {
+.main-header__search--icon:active {
   background-color: #f2f2f2;
   border-radius: 40px;
   padding: 0 10px;
@@ -380,7 +384,7 @@ body {
 
 .swiper-slide {
   background-color: #ffffff;
-  height: 100%;
+  height: 100vh;
   max-height: 600px;
   display: flex;
   justify-content: center;
@@ -511,15 +515,12 @@ body {
 
 .swiper-container .swiper-button-next {
   width: 10%;
-  height: 100vh;
+  height: calc(100vh - 210px);
   text-align: center;
   line-height: 50px;
   position: absolute;
   top: 0;
   opacity: 0;
-}
-.swiper-container .swiper-button-next:hover {
-  cursor: url("../img/icons/icon-star.svg") auto !important;
 }
 
 .collection {
@@ -1289,15 +1290,20 @@ body {
 }
 
 .footer__feedback-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   position: absolute;
   right: 0;
   bottom: 14px;
-  width: 13px;
+  width: 33px;
+  cursor: pointer;
   height: 25px;
   z-index: 8;
   background-color: transparent;
   color: #ffffff;
   border: none;
+  padding: 0;
 }
 
 .menu {
@@ -1313,7 +1319,7 @@ body {
     left: 0;
     transition: all 0.1 ease;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    transition: 0.6s;
+    transition: cubic-bezier(0.17, 0.67, 0.61, 0.3);
   }
 }
 

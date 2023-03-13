@@ -14,7 +14,7 @@
 }
 
 .language:hover {
-  background-color: #F6F4F4;
+  background-color: $language-back;
 
   .language__hidden {
     display: flex;

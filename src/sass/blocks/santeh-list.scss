@@ -4,7 +4,7 @@
 
 .active {
   background-color: $white-color;
-  border-top: 1px solid #D9D9D9;
+  border-top: 1px solid $santeh-list-back;
   display: block;
   z-index: 11;
   position: absolute;
@@ -33,7 +33,7 @@
 
 .santeh-list__nav-common {
   padding-left: 20px;
-  border-left: 1px solid #000000;
+  border-left: 1px solid $black-color;
   transition: 0.3px;
 
   li {

@@ -1,6 +1,6 @@
 .swiper-container {
   width: 100%;
-
+  
   border-bottom: 5px solid $main-border-color;
   position: relative;
   overflow: hidden;
@@ -12,7 +12,7 @@
 
 .swiper-slide {
   background-color: $white-color;
-  height: 100%;
+  height: 100vh;
   max-height: 600px;
   display: flex;
   justify-content: center;
@@ -68,6 +68,7 @@
   .swiper-pagination-fraction {
     width: 128px;
   }
+
   .swiper-pagination-bullet {
     background: $white-color;
     width: 3px;
@@ -145,15 +146,11 @@
 
   .swiper-button-next {
     width: 10%;
-    height: 100vh;
+    height: calc(100vh - 210px);
     text-align: center;
     line-height: 50px;
     position: absolute;
     top: 0;
     opacity: 0;
-
-    &:hover {
-      cursor: url('../img/icons/icon-star.svg') auto !important;
-    }
   }
 }

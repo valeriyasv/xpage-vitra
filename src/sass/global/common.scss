@@ -4,6 +4,13 @@ body {
   overflow-x: hidden;
 }
 
+p,h1,h2,h3,a,span,li{
+  &::selection {
+  background-color: #D1D1D1;
+  }
+}
+  
+
 .html {
   scroll-behavior: smooth;
 }

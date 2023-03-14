@@ -69,9 +69,11 @@
 .footer__nav-item {
   margin-bottom: 8px;
   transition: 0.2s;
+
   @media (max-width: $tablet-width) {
     display: none;
   }
+  
   &:hover {
     color: $hover-color;
   }

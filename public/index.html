@@ -211,11 +211,11 @@
       <div class="swiper-pagination"></div>
       <div class="swiper-button-next"></div>
     </div>
-    <div class="collection"> 
+    <section class="section collection"> 
       <div class="wrapper">
         <div class="collection__top">
           <div class="collection__txt">
-            <h2 class="collection__title">Коллекции</h2>
+            <h2 class="section__title">Коллекции</h2>
             <ul class="collection__nav">
               <li class="collection__nav-item"><a href="#">Коллекции сантехники →</a></li>
               <li class="collection__nav-item"><a href="#">Коллекции плитки →</a></li>
@@ -234,152 +234,304 @@
             </button>
           </div>
         </div>
-        <div class="collection__images">
-          <div class="coll">
-            <div class="collection__images-shell">
-              <picture>
-                <source media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg"><img class="collection__photo" src="img/photo-collection.jpg" alt="">
-              </picture>
-              <div class="collection__btn-plus">
-                <button class="collection__btn-plus-black" data-name="туалет"> </button>
-                <button class="collection__btn-plus-black" data-name="шкаф"> </button>
-                <button class="collection__btn-plus-black" data-name="ванна"> </button>
-                <button class="collection__btn-plus-black black-active" data-name="раковина"></button>
+        <div class="swiper-container-card">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="collection__images">
+                <div class="coll">
+                  <div class="collection__images-shell">
+                    <picture>
+                      <source media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg"><img class="collection__photo" src="img/photo-collection.jpg" alt="">
+                    </picture>
+                    <div class="collection__btn-plus">
+                      <button class="collection__btn-plus-black" data-name="туалет" style="left: 10%; bottom: 26%; position: absolute"> </button>
+                      <button class="collection__btn-plus-black" data-name="шкаф" style="left: 45%; top: 37%; position: absolute"> </button>
+                      <button class="collection__btn-plus-black" data-name="ванна" style="right: 18%; bottom: 20%; position: absolute"> </button>
+                      <button class="collection__btn-plus-black black-active" data-name="раковина" style="left: 29%; bottom: 36%; position: absolute"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards">
+                  <article class="card" data-name="туалет">
+                    <div class="card__image"><img class="card__pict" src="img/photo-card2.jpg" width="440" height="440">
+                      <div class="card__top">
+                        <div class="card__badges"> 
+                          <div class="card__badges-bests">Бестселлер</div>
+                          <div class="card__badges-new">New</div>
+                        </div>
+                        <div class="card__icons">
+                          <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
+                            <svg class="main-header__options-img" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                          </div>
+                          <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
+                            <svg width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-compare"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <div class="card__desc">
+                        <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                        <div class="card__bottom">
+                          <p class="card__price">2 540 Р.</p>
+                          <button class="card__button">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="card" data-name="шкаф">
+                    <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
+                      <div class="card__top">
+                        <div class="card__badges"> 
+                          <div class="card__badges-bests">Бестселлер</div>
+                          <div class="card__badges-new">New</div>
+                        </div>
+                        <div class="card__icons">
+                          <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
+                            <svg class="main-header__options-img" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                          </div>
+                          <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
+                            <svg width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-compare"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <div class="card__desc">
+                        <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                        <div class="card__bottom">
+                          <p class="card__price">2 540 Р.</p>
+                          <button class="card__button">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="card" data-name="ванна">
+                    <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
+                      <div class="card__top">
+                        <div class="card__badges"> 
+                          <div class="card__badges-bests">Бестселлер</div>
+                          <div class="card__badges-new">New</div>
+                        </div>
+                        <div class="card__icons">
+                          <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
+                            <svg class="main-header__options-img" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                          </div>
+                          <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
+                            <svg width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-compare"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <div class="card__desc">
+                        <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                        <div class="card__bottom">
+                          <p class="card__price">2 540 Р.</p>
+                          <button class="card__button">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="card card--block" data-name="раковина">
+                    <div class="card__image"><img class="card__pict" src="img/photo-card.jpg" width="440" height="440">
+                      <div class="card__top">
+                        <div class="card__badges"> 
+                          <div class="card__badges-bests">Бестселлер</div>
+                          <div class="card__badges-new">New</div>
+                        </div>
+                        <div class="card__icons">
+                          <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
+                            <svg class="main-header__options-img" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                          </div>
+                          <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
+                            <svg width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-compare"> </use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <div class="card__desc">
+                        <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                        <div class="card__bottom">
+                          <p class="card__price">2 540 Р.</p>
+                          <button class="card__button">Купить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="collection__images">
+                <div class="coll">
+                  <div class="collection__images-shell">
+                    <picture>
+                      <source media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg"><img class="collection__photo" src="img/photo-collection.jpg" alt="">
+                    </picture>
+                    <div class="collection__btn-plus">
+                      <button class="collection__btn-plus-black" data-name="туалет" style="left: 10%; bottom: 26%; position: absolute"> </button>
+                      <button class="collection__btn-plus-black" data-name="шкаф" style="left: 45%; top: 37%; position: absolute"> </button>
+                      <button class="collection__btn-plus-black" data-name="ванна" style="right: 18%; bottom: 20%; position: absolute"> </button>
+                      <button class="collection__btn-plus-black black-active" data-name="раковина" style="left: 29%; bottom: 36%; position: absolute"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards">
+                  <article class="card" data-name="туалет">
+                    <div class="card__image"><img class="card__pict" src="img/photo-card2.jpg" width="440" height="440">
+                      <div class="card__top">
+                        <div class="card__badges"> 
+                          <div class="card__badges-bests">Бестселлер</div>
+                          <div class="card__badges-new">New</div>
+                        </div>
+                        <div class="card__icons">
+                          <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
+                            <svg class="main-header__options-img" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                          </div>
+                          <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
+                            <svg width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-compare"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <div class="card__desc">
+                        <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                        <div class="card__bottom">
+                          <p class="card__price">2 540 Р.</p>
+                          <button class="card__button">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="card" data-name="шкаф">
+                    <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
+                      <div class="card__top">
+                        <div class="card__badges"> 
+                          <div class="card__badges-bests">Бестселлер</div>
+                          <div class="card__badges-new">New</div>
+                        </div>
+                        <div class="card__icons">
+                          <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
+                            <svg class="main-header__options-img" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                          </div>
+                          <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
+                            <svg width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-compare"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <div class="card__desc">
+                        <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                        <div class="card__bottom">
+                          <p class="card__price">2 540 Р.</p>
+                          <button class="card__button">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="card" data-name="ванна">
+                    <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
+                      <div class="card__top">
+                        <div class="card__badges"> 
+                          <div class="card__badges-bests">Бестселлер</div>
+                          <div class="card__badges-new">New</div>
+                        </div>
+                        <div class="card__icons">
+                          <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
+                            <svg class="main-header__options-img" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                          </div>
+                          <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
+                            <svg width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-compare"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <div class="card__desc">
+                        <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                        <div class="card__bottom">
+                          <p class="card__price">2 540 Р.</p>
+                          <button class="card__button">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="card card--block" data-name="раковина">
+                    <div class="card__image"><img class="card__pict" src="img/photo-card.jpg" width="440" height="440">
+                      <div class="card__top">
+                        <div class="card__badges"> 
+                          <div class="card__badges-bests">Бестселлер</div>
+                          <div class="card__badges-new">New</div>
+                        </div>
+                        <div class="card__icons">
+                          <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
+                            <svg class="main-header__options-img" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                          </div>
+                          <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
+                            <svg width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-compare"> </use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <div class="card__desc">
+                        <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
+                        <div class="card__bottom">
+                          <p class="card__price">2 540 Р.</p>
+                          <button class="card__button">Купить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
-          <div class="cards">
-            <article class="card" data-name="туалет">
-              <div class="card__image"><img class="card__pict" src="img/photo-card2.jpg" width="440" height="440">
-                <div class="card__top">
-                  <div class="card__badges"> 
-                    <div class="card__badges-bests">Бестселлер</div>
-                    <div class="card__badges-new">New</div>
-                  </div>
-                  <div class="card__icons">
-                    <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
-                      <svg class="main-header__options-img" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-star"></use>
-                      </svg>
-                    </div>
-                    <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-compare"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card__content">
-                <div class="card__desc">
-                  <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
-                  <div class="card__bottom">
-                    <p class="card__price">2 540 Р.</p>
-                    <button class="card__button">Купить </button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="card" data-name="шкаф">
-              <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
-                <div class="card__top">
-                  <div class="card__badges"> 
-                    <div class="card__badges-bests">Бестселлер</div>
-                    <div class="card__badges-new">New</div>
-                  </div>
-                  <div class="card__icons">
-                    <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
-                      <svg class="main-header__options-img" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-star"></use>
-                      </svg>
-                    </div>
-                    <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-compare"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card__content">
-                <div class="card__desc">
-                  <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
-                  <div class="card__bottom">
-                    <p class="card__price">2 540 Р.</p>
-                    <button class="card__button">Купить </button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="card" data-name="ванна">
-              <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
-                <div class="card__top">
-                  <div class="card__badges"> 
-                    <div class="card__badges-bests">Бестселлер</div>
-                    <div class="card__badges-new">New</div>
-                  </div>
-                  <div class="card__icons">
-                    <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
-                      <svg class="main-header__options-img" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-star"></use>
-                      </svg>
-                    </div>
-                    <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-compare"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card__content">
-                <div class="card__desc">
-                  <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
-                  <div class="card__bottom">
-                    <p class="card__price">2 540 Р.</p>
-                    <button class="card__button">Купить </button>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="card card--block" data-name="раковина">
-              <div class="card__image"><img class="card__pict" src="img/photo-card.jpg" width="440" height="440">
-                <div class="card__top">
-                  <div class="card__badges"> 
-                    <div class="card__badges-bests">Бестселлер</div>
-                    <div class="card__badges-new">New</div>
-                  </div>
-                  <div class="card__icons">
-                    <div class="main-header__options-item main-header__options-item--star"><a href="#"></a>
-                      <svg class="main-header__options-img" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-star"></use>
-                      </svg>
-                    </div>
-                    <div class="main-header__options-item main-header__options-item--arr"><a href="#"></a>
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-compare"> </use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card__content">
-                <div class="card__desc">
-                  <h3 class="card__title">Liquid Toilet Brush Holder</h3><span class="card__vendor">Арт. 7670B003-7211</span>
-                  <div class="card__bottom">
-                    <p class="card__price">2 540 Р.</p>
-                    <button class="card__button">Купить</button>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
+          <div class="swiper-pagination-card"></div>
+          <div class="swiper-button-next-card"></div>
+          <div class="swiper-button-prev-card"></div>
         </div>
       </div>
-    </div>
-    <div class="ideas">
+    </section>
+    <section class="section ideas">
       <div class="wrapper">
-        <h2 class="ideas__title">Идеи</h2>
+        <h2 class="section__title"> Идеи</h2>
         <div class="ideas__nav-bottom">
           <ul class="ideas__nav"> 
             <li class="ideas__nav-item"> <a href="#">Решения для ванной</a></li>
@@ -431,7 +583,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="footer">
       <div class="wrapper"> 
         <div class="footer__top">
@@ -506,7 +658,7 @@
           <div class="footer__bottom-privacy">
             <p>Vitra 2021</p><a class="footer__bottom-privacy-link" href="#">Политика конфиденциальности</a>
           </div>
-          <p>Made by ONY</p>
+          <p class="footer__made-by">Made by ONY</p>
         </div>
       </div>
     </footer>
@@ -515,6 +667,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/yup"></script>
     <script src="js/script.js"></script>
+    <script src="js/swiper-collection.js"></script>
     <script src="js/nav-hover.js"></script>
     <script src="js/nav-hover-prewiev.js"></script>
     <script src="js/cards.js"></script>

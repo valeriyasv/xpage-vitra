@@ -1,6 +1,7 @@
 .swiper-container {
   width: 100%;
-  
+  max-width: 100%;
+  margin: 0 auto;
   border-bottom: 5px solid $main-border-color;
   position: relative;
   overflow: hidden;
@@ -8,6 +9,14 @@
   .swiper-pagination {
     width: 128px;
   }
+}
+
+.swiper-container-card {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -18,6 +27,7 @@
   justify-content: center;
   align-items: center;
   font-size: 3em;
+  width: 100%;
 }
 
 .swiper-slide__main  {
@@ -56,7 +66,7 @@
   }
 
   img {
-    position: relative;
+    // position: relative;
     width: 100%;
   }
 }
@@ -153,4 +163,17 @@
     top: 0;
     opacity: 0;
   }
+}
+
+.swiper-wrapper-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-button-next-card {
+  width: 20px;
+  height: 200px;
+  background-color: aqua;
+  color: #000000;
+  opacity: 1;
 }

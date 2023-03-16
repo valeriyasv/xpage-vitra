@@ -386,12 +386,22 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 
 .swiper-container {
   width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   border-bottom: 5px solid #B01E19;
   position: relative;
   overflow: hidden;
 }
 .swiper-container .swiper-pagination {
   width: 128px;
+}
+
+.swiper-container-card {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -402,6 +412,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   justify-content: center;
   align-items: center;
   font-size: 3em;
+  width: 100%;
 }
 
 .swiper-slide__main {
@@ -441,7 +452,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 .swiper-slide__main-santeh img,
 .swiper-slide__main-tile img {
-  position: relative;
   width: 100%;
 }
 
@@ -533,6 +543,19 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   position: absolute;
   top: 0;
   opacity: 0;
+}
+
+.swiper-wrapper-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-button-next-card {
+  width: 20px;
+  height: 200px;
+  background-color: aqua;
+  color: #000000;
+  opacity: 1;
 }
 
 .collection {

@@ -1,28 +1,19 @@
-const swiper = new Swiper('.swiper-container-card', {
+const swiper2 = new Swiper('.swiper-container-card', {
   // Options go here
   pagination: {
-    el: '.swiper-pagination-card',
+    el: '.swiper-pagination',
     clickable: true,
   },
   loop: true,
-  slidesPerView: 2,
-  spaceBetween: 1,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 1
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 0
-    }
-  },
+  
+  slidesPerView: 1,
+  
   navigation: {
-    nextEl: '.swiper-button-next-card',
-    prevEl: '.swiper-button-prev-card',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 
 
 
-console.log(swiper)
+console.log(swiper2, 'swiper2')

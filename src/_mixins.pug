@@ -4,8 +4,8 @@ mixin card(name, src, tagOne, tagTwo, title, num, price)
       img(src= src width="440" height="440").card__pict
       .card__top
         .card__badges 
-          .card__badges-bests= tagOne
-          .card__badges-new= tagTwo
+          .card-badge.card-badge--bests= tagOne
+          .card-badge.card-badge--new= tagTwo
         .card__icons
           .main-header__options-item.main-header__options-item--star
             a(href="#")
@@ -21,4 +21,4 @@ mixin card(name, src, tagOne, tagTwo, title, num, price)
         span.card__vendor= num
         .card__bottom
           p.card__price= price
-          button.card__button Купить 
+          button.button.button--card Купить 

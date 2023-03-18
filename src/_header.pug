@@ -68,14 +68,15 @@ header.main-header
           .main-header__search--icon
             input(type="text").main-header__search-text
             a(href='#').main-header__search-btn 
-              svg(width='16' height='16')
+              svg(width='16' height='16').search-svg
                 use(xlink:href="img/sprite.svg#icon-search")
-              p Поиск
+              p.main-header__search-placehold Поиск
           a(href='#').main-header__search--where
             svg(width='15' height='16')
               use(xlink:href="img/sprite.svg#icon-map")
             p.main-header__search-item--map Где купить
     include menu.pug
+    script(src='js/search.js')
     script(src='js/burger.js')
     script(src='js/nav-hover.js')
     script(src='js/nav-hover-prewiev.js')

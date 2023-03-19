@@ -2,7 +2,7 @@
   font-size: 16px;
   padding: 20px 0 0 0;
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     padding: 20px 0;
   }
 
@@ -13,7 +13,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     order: 3;
   }
 }
@@ -34,7 +34,7 @@
     padding: 0 20px;
     border-right: 1px solid $border-color;
 
-    @media (max-width: 900px) {
+    @media (max-width: $tablet-width) {
       padding: 0;
       border: none;
     }
@@ -50,7 +50,7 @@
       padding-left: 10px;
     }
     
-    @media (max-width: 900px) {
+    @media (max-width: $tablet-width) {
       display: none;
     }
   }
@@ -69,7 +69,7 @@
   flex-direction: row;
   align-items: center;
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }
@@ -80,7 +80,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     order: 1;
     margin: 0;
   }
@@ -105,7 +105,7 @@
   flex-direction: row;
   padding-bottom: 20px;
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     padding-bottom: 0;
   }
 
@@ -120,10 +120,10 @@
     border-right: 1px solid $border-color;
     transition: 0.3s;
 
-    @media (max-width: 900px) {
+    @media (max-width: $tablet-width) {
       border-right: none;
       margin-right: 0;
-    padding-right: 0;
+      padding-right: 0;
     }
   }
 
@@ -135,7 +135,8 @@
     &:hover {
       color: $hover-color;
     }
-    @media (max-width: 900px) {
+
+    @media (max-width: $tablet-width) {
       display: none;
     }
   }
@@ -150,7 +151,7 @@
   p {
     padding-left: 10px;
 
-    @media (max-width: 900px) {
+    @media (max-width: $tablet-width) {
       display: none;
     }
   }
@@ -166,21 +167,6 @@
   cursor: pointer;
 }
 
-// .main-header__search--icon:active > .main-header__search-text {
-//   // width: 200px;
-//   background-color: $search-back;
-// }
-
-// .main-header__search--icon:active > .main-header__search-btn p {
-//   display: none;
-// }
-
-// .main-header__search--icon:active {
-//   background-color: $search-back;
-//   border-radius: 40px;
-//   padding: 0 10px;
-// }
-
 .search-active {
   background-color: $search-back;
   border-radius: 40px;
@@ -189,6 +175,10 @@
   .main-header__search-text {
     width: 200px;
     background-color: $search-back;
+
+    @media (max-width: $tablet-width) {
+      width: 150px;
+    }
   }
 
   .main-header__search-placehold {
@@ -205,13 +195,13 @@
     padding-left: 10px;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-header__shell {
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -222,7 +212,7 @@
 .main-header__burger {
   display: none;
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     display: block;
     border-right: 1px solid $border-color;
     padding-right: 15px;
@@ -234,7 +224,7 @@
 .main-header__logo {
   display: none;
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     display: block;
     width: 84px;
     height: 25px;
@@ -243,13 +233,13 @@
 }
 
 .logo {
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-header__options-img {
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     padding-right: 15px;
     margin-right: 15px;
     border-right: 1px solid $border-color;

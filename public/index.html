@@ -232,17 +232,9 @@
               <li class="collection__nav-item"><a href="#">Коллекции плитки →</a></li>
             </ul>
           </div>
-          <div class="collection__arr">
-            <button class="collection__btn">
-              <svg class="collection__btn-icon" width="40" height="40">
-                <use xlink:href="img/sprite.svg#icon-arr-button"></use>
-              </svg>
-            </button>
-            <button class="collection__btn collection__btn--next">
-              <svg class="collection__btn-icon" width="40" height="40">
-                <use xlink:href="img/sprite.svg#icon-arr-button"></use>
-              </svg>
-            </button>
+          <div class="swiper-navigation">
+            <div class="swiper-button-next" id="swiperNext"></div>
+            <div class="swiper-button-prev" id="swiperPrev"></div>
           </div>
         </div>
         <div class="swiper-container-card">
@@ -398,10 +390,10 @@
                       <source media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg"><img class="collection__photo" src="img/photo-collection2.jpg" alt="">
                     </picture>
                     <div class="collection__btn-plus">
-                      <button class="collection__btn-plus-black" data-name="туалет" style="left: 40%; bottom: 26%; position: absolute"> </button>
+                      <button class="collection__btn-plus-black" data-name="туалет" style="left: 80%; bottom: 60%; position: absolute"> </button>
                       <button class="collection__btn-plus-black" data-name="шкаф" style="left: 41%; top: 37%; position: absolute"> </button>
-                      <button class="collection__btn-plus-black" data-name="ванна" style="right: 58%; bottom: 20%; position: absolute"> </button>
-                      <button class="collection__btn-plus-black black-active" data-name="раковина" style="left: 29%; bottom: 36%; position: absolute"></button>
+                      <button class="collection__btn-plus-black" data-name="ванна" style="right: 30%; bottom: 20%; position: absolute"> </button>
+                      <button class="collection__btn-plus-black black-active" data-name="раковина" style="left: 29%; bottom: 30%; position: absolute"></button>
                     </div>
                   </div>
                 </div>
@@ -535,8 +527,6 @@
             </div>
           </div>
           <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>

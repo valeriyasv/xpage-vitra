@@ -61,13 +61,16 @@ html(lang="ru").html
                 a(href='#') Коллекции сантехники →
               li.collection__nav-item
                 a(href='#') Коллекции плитки →
-          .collection__arr
-            button.collection__btn
-              svg(width='40' height='40').collection__btn-icon
-                use(xlink:href="img/sprite.svg#icon-arr-button")
-            button.collection__btn.collection__btn--next
-              svg(width='40' height='40').collection__btn-icon
-                use(xlink:href="img/sprite.svg#icon-arr-button")
+          //- .collection__arr
+          //-   button.collection__btn
+          //-     svg(width='40' height='40').collection__btn-icon
+          //-       use(xlink:href="img/sprite.svg#icon-arr-button")
+          //-   button.collection__btn.collection__btn--next
+          //-     svg(width='40' height='40').collection__btn-icon
+          //-       use(xlink:href="img/sprite.svg#icon-arr-button")
+          .swiper-navigation
+            .swiper-button-next(id = 'swiperNext')
+            .swiper-button-prev(id = 'swiperPrev')
         .swiper-container-card
           .swiper-wrapper
             .swiper-slide
@@ -96,10 +99,10 @@ html(lang="ru").html
                       source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
                       img(src="img/photo-collection2.jpg", alt="").collection__photo
                     .collection__btn-plus
-                      button(data-name="туалет" style='left: 40%; bottom: 26%; position: absolute').collection__btn-plus-black 
+                      button(data-name="туалет" style='left: 80%; bottom: 60%; position: absolute').collection__btn-plus-black 
                       button(data-name="шкаф" style='left: 41%; top: 37%; position: absolute').collection__btn-plus-black 
-                      button(data-name="ванна" style='right: 58%; bottom: 20%; position: absolute').collection__btn-plus-black 
-                      button(data-name="раковина" style='left: 29%; bottom: 36%; position: absolute').collection__btn-plus-black.black-active
+                      button(data-name="ванна" style='right: 30%; bottom: 20%; position: absolute').collection__btn-plus-black 
+                      button(data-name="раковина" style='left: 29%; bottom: 30%; position: absolute').collection__btn-plus-black.black-active
                 .cards
                   include _mixins.pug
                   +card('туалет', 'img/photo-card2.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
@@ -107,8 +110,6 @@ html(lang="ru").html
                   +card('ванна', 'img/photo-card.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
                   +card('раковина', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
           .swiper-pagination
-          .swiper-button-next
-          .swiper-button-prev
     section.section.ideas
       .wrapper
         h2.section__title  Идеи

@@ -1,4 +1,5 @@
 const btnPlus = document.querySelectorAll('.collection__btn-plus')
+const wrapperSwiper = document.querySelector('.swiper-container-card');
 
 btnPlus.forEach((item)  => {
 
@@ -10,6 +11,10 @@ btnPlus.forEach((item)  => {
       item.classList.remove('card-active')
     })
   itemMenuImage.classList.add('card-active')
+  if (window.innerWidth < 900) {
+    // Изменение стилей для мобильных устройств
+    wrapperSwiper.style.overflow = 'visible';
+  }
   const activeBtn = document.querySelector(`.collection__btn-plus-black[data-name=${e.target.dataset.name}]`);
   
   const allBtn = document.querySelectorAll('.collection__btn-plus-black');

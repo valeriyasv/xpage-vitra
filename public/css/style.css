@@ -682,9 +682,10 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 @media (max-width: 900px) {
   .collection__photo {
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: 0;
+    height: 375px;
   }
 }
 
@@ -805,7 +806,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
     padding: 0 40px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    height: 100vh;
   }
 }
 

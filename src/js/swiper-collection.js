@@ -1,5 +1,6 @@
 const swiper2 = new Swiper('.swiper-container-card', {
   // Options go here
+  spaceBetween: 30,
  
   pagination: {
     el: '.swiper-pagination',

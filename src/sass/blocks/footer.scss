@@ -9,6 +9,12 @@
    }
 }
 
+.footer__up {
+  &:hover {
+    color: $hover-color;
+  }
+}
+
 .footer {
   background-color: $footer-color;
   color: $white-color;

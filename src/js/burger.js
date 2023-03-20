@@ -1,7 +1,7 @@
 const btn = document.querySelector('.main-header__burger');
 const menu = document.querySelector('.menu');
 const closeBurger = document.querySelector('.main-header__burger-close');
-const santehLink = document.querySelector('.menu__santeh');
+const santehLink = document.querySelector('.menu__santeh-link');
 const santehMob = document.querySelector('.menu-santeh');
 
 btn.addEventListener('click', () => {

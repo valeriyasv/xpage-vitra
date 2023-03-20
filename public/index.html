@@ -182,6 +182,30 @@
         </div>
       </div>
     </div>
+    <div class="menu-santeh">
+      <div class="wrapper">
+        <div class="menu__shell">
+          <div class="menu__top menu__top--santeh">
+            <div class="menu__santeh"> <a class="menu__santeh-link" href="#">Назад</a></div>
+          </div>
+          <div class="menu__nav">
+            <ul class="menu__nav-list">
+              <li class="menu__nav-item"><a href="#">Унитазы</a></li>
+              <li class="menu__nav-item"><a href="#">Раковины</a></li>
+              <li class="menu__nav-item"><a href="#">Писсуары</a></li>
+              <li class="menu__nav-item"><a href="#">Биде</a></li>
+              <li class="menu__nav-item"><a href="#">Комплектующие</a></li>
+              <li class="menu__nav-item"><a href="#">Пьедесталы</a></li>
+            </ul>
+          </div>
+          <div class="menu__bottom"> 
+            <div class="menu__lang"> 
+              <p class="menu__lang-name">Russia </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -233,8 +257,16 @@
             </ul>
           </div>
           <div class="swiper-navigation">
-            <div class="swiper-button-next" id="swiperNext"></div>
-            <div class="swiper-button-prev" id="swiperPrev"></div>
+            <div class="swiper-button-next" id="swiperNext">
+              <svg class="collection__btn-icon" width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-arr-button"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-prev" id="swiperPrev">
+              <svg class="collection__btn-icon" width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-arr-button"></use>
+              </svg>
+            </div>
           </div>
         </div>
         <div class="swiper-container-card">
@@ -526,7 +558,6 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -667,6 +698,7 @@
     <script src="js/validator.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/yup"></script>
+    <script src="js/menu-sateh-mob.js"></script>
     <script src="js/search.js"></script>
     <script src="js/cards.js"></script>
     <script src="js/swiper-collection.js"></script>

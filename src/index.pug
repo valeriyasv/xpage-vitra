@@ -14,6 +14,7 @@ html(lang="ru").html
   body 
     include _header.pug
     include santeh-hov.pug
+    include santeh-mobile.pug
 
     .swiper-container
       .swiper-wrapper
@@ -61,16 +62,13 @@ html(lang="ru").html
                 a(href='#') Коллекции сантехники →
               li.collection__nav-item
                 a(href='#') Коллекции плитки →
-          //- .collection__arr
-          //-   button.collection__btn
-          //-     svg(width='40' height='40').collection__btn-icon
-          //-       use(xlink:href="img/sprite.svg#icon-arr-button")
-          //-   button.collection__btn.collection__btn--next
-          //-     svg(width='40' height='40').collection__btn-icon
-          //-       use(xlink:href="img/sprite.svg#icon-arr-button")
           .swiper-navigation
             .swiper-button-next(id = 'swiperNext')
+              svg(width='40' height='40').collection__btn-icon
+                use(xlink:href="img/sprite.svg#icon-arr-button")
             .swiper-button-prev(id = 'swiperPrev')
+              svg(width='40' height='40').collection__btn-icon
+                use(xlink:href="img/sprite.svg#icon-arr-button")
         .swiper-container-card
           .swiper-wrapper
             .swiper-slide
@@ -109,7 +107,7 @@ html(lang="ru").html
                   +card('шкаф', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
                   +card('ванна', 'img/photo-card.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
                   +card('раковина', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-          .swiper-pagination
+         
     section.section.ideas
       .wrapper
         h2.section__title  Идеи
@@ -157,6 +155,7 @@ html(lang="ru").html
     include _footer.pug
     script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
     script(src="https://cdn.jsdelivr.net/npm/yup")
+    script(src='js/menu-sateh-mob.js')
     script(src='js/search.js')
     script(src='js/cards.js')
     script(src='js/swiper-collection.js')

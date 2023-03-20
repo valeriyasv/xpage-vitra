@@ -46,30 +46,35 @@
   .swiper-button-prev {
     width: 40px;
     height: 40px;
+    color: $black-color;
+    border-radius: 50%;
+
     &::after {
-      width: 40px;
       height: 40px;
       font-size: 0;
-      background-image: url('../img/icons/icon-arr-button.svg');
+    }
+
+    &:hover {
+      color: $white-color;
+      background-color: $main-border-color;
     }
   }
 
   .swiper-button-next {
     width: 40px;
     height: 40px;
+    transform: rotate(180deg);
+    color: $black-color;
+    border-radius: 50%;
 
     &::after {
-      background-image: url('../img/icons/icon-arr-button.svg');
-      transform: rotate(180deg);
-      width: 40px;
       height: 40px;
       font-size: 0;
     }
 
     &:hover {
-      &::after {
-        background-image: url('../img/icons/icon-arr-col-hov.svg');
-      }
+      color: $white-color;
+      background-color: $main-border-color;
     }
   }
 }

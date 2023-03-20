@@ -19,14 +19,6 @@
   overflow: hidden;
 }
 
-// #swiperPrev {
-//   width: 20px;
-//   height: 20px;
-//   background-color: transparent;
-//   border-radius: 50%;
-//   border: #000000;
-// }
-
 .swiper-navigation {
   position: absolute;
   right: -10px;
@@ -225,12 +217,4 @@
 .swiper-wrapper-card {
   display: flex;
   flex-direction: row;
-}
-
-.swiper-button-next-card {
-  width: 20px;
-  height: 200px;
-  background-color: aqua;
-  color: #000000;
-  opacity: 1;
 }

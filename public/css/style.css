@@ -595,14 +595,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   flex-direction: row;
 }
 
-.swiper-button-next-card {
-  width: 20px;
-  height: 200px;
-  background-color: aqua;
-  color: #000000;
-  opacity: 1;
-}
-
 .collection {
   margin-top: 120px;
 }

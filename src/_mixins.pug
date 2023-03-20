@@ -22,3 +22,28 @@ mixin card(name, src, tagOne, tagTwo, title, num, price)
         .card__bottom
           p.card__price= price
           button.button.button--card Купить 
+
+mixin card-active(name, src, tagOne, tagTwo, title, num, price)
+  article.card(data-name= name).card-active
+    .card__image
+      img(src= src width="440" height="440").card__pict
+      .card__top
+        .card__badges 
+          .card-badge.card-badge--bests= tagOne
+          .card-badge.card-badge--new= tagTwo
+        .card__icons
+          .main-header__options-item.main-header__options-item--star
+            a(href="#")
+            svg(width='25' height='25').main-header__options-img
+              use(xlink:href="img/sprite.svg#icon-star")
+          .main-header__options-item.main-header__options-item--arr
+            a(href="#")
+            svg(width='25' height='25')
+              use(xlink:href="img/sprite.svg#icon-compare")
+    .card__content
+      .card__desc
+        h3.card__title= title
+        span.card__vendor= num
+        .card__bottom
+          p.card__price= price
+          button.button.button--card Купить 

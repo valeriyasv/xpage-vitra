@@ -490,6 +490,12 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   top: 40px;
   left: 40px;
 }
+@media (max-width: 900px) {
+  .swiper-slide__main-santeh p,
+  .swiper-slide__main-tile p {
+    font-size: 40px;
+  }
+}
 .swiper-slide__main-santeh span,
 .swiper-slide__main-tile span {
   position: absolute;

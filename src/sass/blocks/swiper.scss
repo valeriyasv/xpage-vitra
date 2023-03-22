@@ -205,12 +205,13 @@
 
   .swiper-button-next {
     width: 10%;
-    height: calc(100vh - 210px);
+    height: 100%;
     text-align: center;
     line-height: 50px;
     position: absolute;
     top: 0;
     opacity: 0;
+    cursor: url('../img/cursor.png'), pointer;
   }
 }
 

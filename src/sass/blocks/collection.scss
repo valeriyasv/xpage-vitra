@@ -108,6 +108,7 @@
   border-radius: 50%;
   position: relative;
   cursor: pointer;
+  transition-duration: 0.5s;
 
   &::before {
     content: '';
@@ -130,12 +131,13 @@
 
 .black-active {
   background-color: $main-border-color;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border: none;
   border-radius: 50%;
   position: relative;
-
+  transform: scale(1.2);
+  
   &::before {
     content: '';
     width: 13px;

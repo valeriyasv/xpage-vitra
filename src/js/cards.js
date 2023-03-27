@@ -1,5 +1,7 @@
 const btnPlus = document.querySelectorAll('.collection__btn-plus')
 const wrapperSwiper = document.querySelector('.swiper-container-card');
+const cardMob = document.querySelector('.card-mobile');
+const card = document.querySelector('.card');
 
 btnPlus.forEach((item)  => {
 
@@ -14,6 +16,12 @@ btnPlus.forEach((item)  => {
   if (window.innerWidth < 900) {
     // Изменение стилей для мобильных устройств
     wrapperSwiper.style.overflow = 'visible';
+    card.classList.add('card-mobile')
+    cardMob.style.transform = 'translateY(100%)';
+    body.style.backgroundColor = '#f2f2f2'
+    allItem.forEach(item => {
+      item.classList.remove('card-active')
+    })
   }
   const activeBtn = document.querySelector(`.collection__btn-plus-black[data-name=${e.target.dataset.name}]`);
   

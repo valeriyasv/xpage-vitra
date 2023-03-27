@@ -127,6 +127,10 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   flex-direction: row;
   align-items: center;
 }
+.main-header__options li {
+  height: 25px;
+  flex-shrink: 0;
+}
 
 .main-header__options-item {
   display: flex;
@@ -391,7 +395,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 
 .swiper-container {
   width: 100%;
-  max-width: 100%;
+  max-width: 1360px;
   margin: 0 auto;
   border-bottom: 5px solid #B01E19;
   position: relative;
@@ -424,32 +428,33 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   position: relative;
 }
 
-.collection__top .swiper-button-prev {
+.collection__top .swiper-button-prev-card {
   width: 40px;
   height: 40px;
   color: #000000;
   border-radius: 50%;
+  transform: rotate(180deg);
+  margin-left: 5px;
 }
-.collection__top .swiper-button-prev::after {
+.collection__top .swiper-button-prev-card::after {
   height: 40px;
   font-size: 0;
 }
-.collection__top .swiper-button-prev:hover {
+.collection__top .swiper-button-prev-card:hover {
   color: #ffffff;
   background-color: #B01E19;
 }
-.collection__top .swiper-button-next {
+.collection__top .swiper-button-next-card {
   width: 40px;
   height: 40px;
-  transform: rotate(180deg);
   color: #000000;
   border-radius: 50%;
 }
-.collection__top .swiper-button-next::after {
+.collection__top .swiper-button-next-card::after {
   height: 40px;
   font-size: 0;
 }
-.collection__top .swiper-button-next:hover {
+.collection__top .swiper-button-next-card:hover {
   color: #ffffff;
   background-color: #B01E19;
 }
@@ -906,6 +911,14 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   .card__image {
     position: relative;
   }
+}
+
+.card-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease-out;
 }
 
 .ideas {

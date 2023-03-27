@@ -10,21 +10,25 @@ const swiper = new Swiper('.swiper-container', {
     320: {
       slidesPerView: 1
     },
-    768: {
+    // 768: {
+    //   slidesPerView: 1.1
+    // },
+
+    900: {
       slidesPerView: 1.1
     },
 
-    1500: {
-      slidesPerView: 1.5
-    },
+    // 1500: {
+    //   slidesPerView: 1.5
+    // },
 
-    1900: {
-      slidesPerView: 2
-    },
+    // 1900: {
+    //   slidesPerView: 2
+    // },
 
-    2600: {
-      slidesPerView: 2.5
-    },
+    // 2600: {
+    //   slidesPerView: 2.5
+    // },
   },
   navigation: {
     nextEl: '.swiper-button-next',

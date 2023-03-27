@@ -11,8 +11,8 @@ const swiper2 = new Swiper('.swiper-container-card', {
   slidesPerView: 1,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-card',
+    prevEl: '.swiper-button-prev-card',
   },
 });
 

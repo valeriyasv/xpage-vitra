@@ -1,1 +1,1 @@
-const swiper=new Swiper(".swiper-container",{spaceBetween:0,pagination:{el:".swiper-pagination",clickable:!0},loop:!0,breakpoints:{320:{slidesPerView:1},768:{slidesPerView:1.1},1500:{slidesPerView:1.5},1900:{slidesPerView:2},2600:{slidesPerView:2.5}},navigation:{nextEl:".swiper-button-next"}});console.log(swiper,"swiper");
+const swiper=new Swiper(".swiper-container",{spaceBetween:0,pagination:{el:".swiper-pagination",clickable:!0},loop:!0,breakpoints:{320:{slidesPerView:1},900:{slidesPerView:1.1}},navigation:{nextEl:".swiper-button-next"}});console.log(swiper,"swiper");

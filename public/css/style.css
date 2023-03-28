@@ -811,8 +811,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 @media (max-width: 900px) {
   .card-active {
-    position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
     padding: 0 40px;
@@ -821,6 +819,14 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
     z-index: 99;
     margin: 0 auto;
     max-width: 550px;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    transition: bottom 0.5s ease-in-out;
+    max-height: 80%;
   }
 }
 
@@ -915,10 +921,18 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 
 .card-mobile {
   position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: bottom 0.5s ease-in-out;
+  max-height: 80%;
+}
+
+.show {
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: transform 0.5s ease-out;
+  max-height: 80%;
 }
 
 .ideas {
@@ -1499,12 +1513,19 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 .santeh-list__nav-santeh-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   max-width: 225px;
   align-items: baseline;
+  cursor: pointer;
+}
+.santeh-list__nav-santeh-link .santeh-list__svg {
+  display: none;
 }
 .santeh-list__nav-santeh-link:hover {
   color: #B49F8C;
+}
+.santeh-list__nav-santeh-link:hover .santeh-list__svg {
+  display: block;
+  margin-right: 10px;
 }
 
 .santeh-list__prewiev-pict {

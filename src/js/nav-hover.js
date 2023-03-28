@@ -5,7 +5,7 @@ navItem.addEventListener('mouseover', (e) => {
     const navList = document.querySelector('.main-header__nav')
     hoverContent.classList.add('active')
     
-    const menuList = document.querySelector('.santeh-list__nav-common');
+    const menuList = document.querySelector('.santeh-list__nav-santeh');
     
     console.log(menuList)
     menuList.addEventListener('mouseover', (e) => {

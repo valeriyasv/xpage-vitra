@@ -3,41 +3,52 @@
     .santeh-list__shell
       .santeh-list__nav 
         ul.santeh-list__nav-santeh
-          li
-            a(href="#").santeh-list__nav-santeh-link
-              svg(width='15' height='11')
+          li(data-name='унитазы').santeh-list__nav-santeh-link
+            svg(width='15' height='11').santeh-list__svg
+              use(xlink:href="img/sprite.svg#icon-hover-arr")
+            | Сантехника для ванной 
+          li(data-name='раковины').santeh-list__nav-santeh-link
+            svg(width='15' height='11').santeh-list__svg
+              use(xlink:href="img/sprite.svg#icon-hover-arr")
+            | Мебель для ванной
+          li(data-name='писсуары').santeh-list__nav-santeh-link
+            svg(width='15' height='11').santeh-list__svg
+              use(xlink:href="img/sprite.svg#icon-hover-arr")
+            | Смесители
+          li(data-name='биде').santeh-list__nav-santeh-link
+            svg(width='15' height='11').santeh-list__svg
+              use(xlink:href="img/sprite.svg#icon-hover-arr")
+            | Инсталляции 
+          li(data-name='комплектующие').santeh-list__nav-santeh-link
+              svg(width='15' height='11').santeh-list__svg
                 use(xlink:href="img/sprite.svg#icon-hover-arr")
-              p Сантехника для ванной 
-          li 
-            a(href="#") Мебель для ванной
-          li 
-            a(href="#") Смесители
-          li
-            a(href="#") Инсталляции
-          li 
-            a(href="#") Ванны
-          li 
-            a(href="#") Душевые системы
-          li 
-            a(href="#") Аксессуары
+              | Ванны
+          li(data-name='пьедесталы').santeh-list__nav-santeh-link
+            svg(width='15' height='11').santeh-list__svg
+              use(xlink:href="img/sprite.svg#icon-hover-arr")
+            | Душевые системы
+          li(data-name='пьедесталы').santeh-list__nav-santeh-link
+            svg(width='15' height='11').santeh-list__svg
+              use(xlink:href="img/sprite.svg#icon-hover-arr")
+            | Аксессуары
         ul.santeh-list__nav-common 
           li Все товары
-          li(data-name='унитазы') Унитазы
-          li(data-name='раковины') Раковины
-          li(data-name='писсуары') Писсуары
-          li(data-name='биде') Биде
-          li(data-name='комплектующие') Комплектующие
-          li(data-name='пьедесталы') Пьедесталы
+          li Унитазы
+          li Раковины
+          li Писсуары
+          li Биде
+          li Комплектующие
+          li Пьедесталы
       .santeh-list__prewiev
-        .santeh-list__prewiev-pict( data-name='унитазы')
+        .santeh-list__prewiev-pict(data-name='унитазы')
           img(src="img/tualet.jpg" alt="").santeh-list__prewiev-img
-        .santeh-list__prewiev-pict( data-name='раковины')
+        .santeh-list__prewiev-pict(data-name='раковины')
           img(src="img/photo1.jpg" alt="").santeh-list__prewiev-img
-        .santeh-list__prewiev-pict( data-name='писсуары')
+        .santeh-list__prewiev-pict(data-name='писсуары')
+          img(src="img/tualet.jpg" alt="").santeh-list__prewiev-img
+        .santeh-list__prewiev-pict(data-name='биде')
           img(src="img/photo-main-san.jpg" alt="").santeh-list__prewiev-img
-        .santeh-list__prewiev-pict( data-name='биде')
+        .santeh-list__prewiev-pict(data-name='комплектующие')
           img(src="img/tualet.jpg" alt="").santeh-list__prewiev-img
-        .santeh-list__prewiev-pict( data-name='комплектующие')
-          img(src="img/tualet.jpg" alt="").santeh-list__prewiev-img
-        .santeh-list__prewiev-pict( data-name='пьедесталы')
+        .santeh-list__prewiev-pict(data-name='пьедесталы')
           img(src="img/tualet.jpg" alt="").santeh-list__prewiev-img

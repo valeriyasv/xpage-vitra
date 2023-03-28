@@ -173,33 +173,57 @@
         <div class="santeh-list__shell">
           <div class="santeh-list__nav"> 
             <ul class="santeh-list__nav-santeh">
-              <li><a class="santeh-list__nav-santeh-link" href="#">
-                  <svg width="15" height="11">
-                    <use xlink:href="img/sprite.svg#icon-hover-arr"></use>
-                  </svg>
-                  <p>Сантехника для ванной </p></a></li>
-              <li> <a href="#">Мебель для ванной</a></li>
-              <li> <a href="#">Смесители</a></li>
-              <li><a href="#">Инсталляции</a></li>
-              <li> <a href="#">Ванны</a></li>
-              <li> <a href="#">Душевые системы</a></li>
-              <li> <a href="#">Аксессуары</a></li>
+              <li class="santeh-list__nav-santeh-link" data-name="унитазы">
+                <svg class="santeh-list__svg" width="15" height="11">
+                  <use xlink:href="img/sprite.svg#icon-hover-arr"></use>
+                </svg>Сантехника для ванной 
+              </li>
+              <li class="santeh-list__nav-santeh-link" data-name="раковины">
+                <svg class="santeh-list__svg" width="15" height="11">
+                  <use xlink:href="img/sprite.svg#icon-hover-arr"></use>
+                </svg>Мебель для ванной
+              </li>
+              <li class="santeh-list__nav-santeh-link" data-name="писсуары">
+                <svg class="santeh-list__svg" width="15" height="11">
+                  <use xlink:href="img/sprite.svg#icon-hover-arr"></use>
+                </svg>Смесители
+              </li>
+              <li class="santeh-list__nav-santeh-link" data-name="биде">
+                <svg class="santeh-list__svg" width="15" height="11">
+                  <use xlink:href="img/sprite.svg#icon-hover-arr"></use>
+                </svg>Инсталляции 
+              </li>
+              <li class="santeh-list__nav-santeh-link" data-name="комплектующие">
+                <svg class="santeh-list__svg" width="15" height="11">
+                  <use xlink:href="img/sprite.svg#icon-hover-arr"></use>
+                </svg>Ванны
+              </li>
+              <li class="santeh-list__nav-santeh-link" data-name="пьедесталы">
+                <svg class="santeh-list__svg" width="15" height="11">
+                  <use xlink:href="img/sprite.svg#icon-hover-arr"></use>
+                </svg>Душевые системы
+              </li>
+              <li class="santeh-list__nav-santeh-link" data-name="пьедесталы">
+                <svg class="santeh-list__svg" width="15" height="11">
+                  <use xlink:href="img/sprite.svg#icon-hover-arr"></use>
+                </svg>Аксессуары
+              </li>
             </ul>
             <ul class="santeh-list__nav-common"> 
               <li>Все товары</li>
-              <li data-name="унитазы">Унитазы</li>
-              <li data-name="раковины">Раковины</li>
-              <li data-name="писсуары">Писсуары</li>
-              <li data-name="биде">Биде</li>
-              <li data-name="комплектующие">Комплектующие</li>
-              <li data-name="пьедесталы">Пьедесталы</li>
+              <li>Унитазы</li>
+              <li>Раковины</li>
+              <li>Писсуары</li>
+              <li>Биде</li>
+              <li>Комплектующие</li>
+              <li>Пьедесталы</li>
             </ul>
           </div>
           <div class="santeh-list__prewiev">
             <div class="santeh-list__prewiev-pict" data-name="унитазы"><img class="santeh-list__prewiev-img" src="img/tualet.jpg" alt=""></div>
             <div class="santeh-list__prewiev-pict" data-name="раковины"><img class="santeh-list__prewiev-img" src="img/photo1.jpg" alt=""></div>
-            <div class="santeh-list__prewiev-pict" data-name="писсуары"><img class="santeh-list__prewiev-img" src="img/photo-main-san.jpg" alt=""></div>
-            <div class="santeh-list__prewiev-pict" data-name="биде"><img class="santeh-list__prewiev-img" src="img/tualet.jpg" alt=""></div>
+            <div class="santeh-list__prewiev-pict" data-name="писсуары"><img class="santeh-list__prewiev-img" src="img/tualet.jpg" alt=""></div>
+            <div class="santeh-list__prewiev-pict" data-name="биде"><img class="santeh-list__prewiev-img" src="img/photo-main-san.jpg" alt=""></div>
             <div class="santeh-list__prewiev-pict" data-name="комплектующие"><img class="santeh-list__prewiev-img" src="img/tualet.jpg" alt=""></div>
             <div class="santeh-list__prewiev-pict" data-name="пьедесталы"><img class="santeh-list__prewiev-img" src="img/tualet.jpg" alt=""></div>
           </div>
@@ -311,7 +335,7 @@
                   </div>
                 </div>
                 <div class="cards">
-                                    <article class="card card-mobile" data-name="зеркало">
+                                    <article class="card" data-name="зеркало">
                                       <div class="card__image"><img class="card__pict" src="img/photo-card2.jpg" width="440" height="440">
                                         <div class="card__top">
                                           <div class="card__badges"> 
@@ -342,7 +366,7 @@
                                         </div>
                                       </div>
                                     </article>
-                                    <article class="card card-mobile" data-name="плитка">
+                                    <article class="card" data-name="плитка">
                                       <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
                                         <div class="card__top">
                                           <div class="card__badges"> 
@@ -373,7 +397,7 @@
                                         </div>
                                       </div>
                                     </article>
-                                    <article class="card card-mobile" data-name="ручка">
+                                    <article class="card" data-name="ручка">
                                       <div class="card__image"><img class="card__pict" src="img/photo-card.jpg" width="440" height="440">
                                         <div class="card__top">
                                           <div class="card__badges"> 
@@ -404,7 +428,7 @@
                                         </div>
                                       </div>
                                     </article>
-                                    <article class="card card-mobile" data-name="подставка">
+                                    <article class="card" data-name="подставка">
                                       <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
                                         <div class="card__top">
                                           <div class="card__badges"> 
@@ -454,7 +478,7 @@
                   </div>
                 </div>
                 <div class="cards">
-                                    <article class="card card-mobile" data-name="туалет">
+                                    <article class="card" data-name="туалет">
                                       <div class="card__image"><img class="card__pict" src="img/photo-card2.jpg" width="440" height="440">
                                         <div class="card__top">
                                           <div class="card__badges"> 
@@ -485,7 +509,7 @@
                                         </div>
                                       </div>
                                     </article>
-                                    <article class="card card-mobile" data-name="шкаф">
+                                    <article class="card" data-name="шкаф">
                                       <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
                                         <div class="card__top">
                                           <div class="card__badges"> 
@@ -516,7 +540,7 @@
                                         </div>
                                       </div>
                                     </article>
-                                    <article class="card card-mobile" data-name="ванна">
+                                    <article class="card" data-name="ванна">
                                       <div class="card__image"><img class="card__pict" src="img/photo-card.jpg" width="440" height="440">
                                         <div class="card__top">
                                           <div class="card__badges"> 
@@ -547,7 +571,7 @@
                                         </div>
                                       </div>
                                     </article>
-                                    <article class="card card-mobile" data-name="раковина">
+                                    <article class="card" data-name="раковина">
                                       <div class="card__image"><img class="card__pict" src="img/photo-card3.jpg" width="440" height="440">
                                         <div class="card__top">
                                           <div class="card__badges"> 

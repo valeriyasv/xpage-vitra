@@ -56,15 +56,27 @@
   }
 }
 
+
+
 .santeh-list__nav-santeh-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
   max-width: 225px;
   align-items: baseline;
+  cursor: pointer;
+
+  .santeh-list__svg {
+    display: none;
+  }
 
   &:hover {
     color: $hover-color;
+
+    .santeh-list__svg {
+      display: block;
+      margin-right: 10px;
+    }
   }
 }
 

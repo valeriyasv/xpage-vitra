@@ -8,6 +8,8 @@ btn.addEventListener('click', () => {
   menu.style.display = 'block';
   closeBurger.style.display = 'block';
   btn.style.display = 'none';
+  menu.style.display = 'flex';
+  menu.style.transform = menu.style.transform === 'translateX(0)' ? 'translateX(100%)' : 'translateX(0)';
 })
 santehLink.addEventListener('click', () => {
   console.log(santehMob)

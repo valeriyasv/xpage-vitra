@@ -1,5 +1,6 @@
 .swiper-container {
   width: 100%;
+  height: calc(100vh - 210px);
   max-width: 1360px;
   margin: 0 auto;
   border-bottom: 5px solid $main-border-color;
@@ -75,7 +76,7 @@
 
 .swiper-slide {
   background-color: $white-color;
-  height: calc(100vh - 210px);
+  height: 100%;
   max-height: 600px;
   display: flex;
   justify-content: center;

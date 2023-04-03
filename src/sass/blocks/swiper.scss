@@ -42,7 +42,7 @@
     height: 40px;
     color: $black-color;
     border-radius: 50%;
-    transform: rotate(180deg);
+    // transform: rotate(180deg);
     margin-left: 5px;
 
     &::after {
@@ -61,6 +61,8 @@
     height: 40px;
     color: $black-color;
     border-radius: 50%;
+    transform: rotate(180deg);
+    margin-left: 5px;
 
     &::after {
       height: 40px;

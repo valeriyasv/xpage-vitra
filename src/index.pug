@@ -63,11 +63,11 @@ html(lang="ru").html
               li.collection__nav-item
                 a(href='#') Коллекции плитки →
           .swiper-navigation
-            .swiper-button-next-card(id = 'swiperNext')
-              svg(width='40' height='40').collection__btn-icon
-                use(xlink:href="img/sprite.svg#icon-arr-button")
             .swiper-button-prev-card(id = 'swiperPrev')
               svg(width='40' height='40').collection__btn-icon
+                use(xlink:href="img/sprite.svg#icon-arr-button")
+            .swiper-button-next-card(id = 'swiperNext')
+              svg(width='40' height='40').collection__btn-icon.collection__btn-icon--next
                 use(xlink:href="img/sprite.svg#icon-arr-button")
         .swiper-container-card
           .swiper-wrapper

@@ -69,6 +69,86 @@
 
   @media (max-width: $tablet-width) {
     margin-left: 0;
+    width: 100%;
+  }
+
+  li {
+    margin-bottom: 8px;
+    transition: 0.2s;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  .footer__nav-item--company {
+    margin-bottom: 18px;
+  
+    @media (max-width: $tablet-width) {
+      display: block;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $border-bottom-footer;
+      width: 100%;
+      position: relative;
+
+      &::after {
+        content: '↑';
+        transform: rotate(180deg);
+        position: absolute;
+        right: 3px;
+      }
+    }
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+  .footer__nav-item--products {
+    margin-bottom: 18px;
+  
+    @media (max-width: $tablet-width) {
+      display: block;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $border-bottom-footer;
+      width: 100%;
+      position: relative;
+
+      &::after {
+        content: '↑';
+        transform: rotate(180deg);
+        position: absolute;
+        right: 3px;
+      }
+    }
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+  
+  .footer__nav-item--store {
+    margin-bottom: 18px;
+  
+    @media (max-width: $tablet-width) {
+      display: block;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $border-bottom-footer;
+      width: 100%;
+      position: relative;
+
+      &::after {
+        content: '↑';
+        transform: rotate(180deg);
+        position: absolute;
+        right: 3px;
+      }
+    }
+
+    &:hover {
+      color: $white-color;
+    }
   }
 }
 
@@ -84,21 +164,6 @@
     color: $hover-color;
   }
   
-  &--title {
-    margin-bottom: 18px;
-
-    @media (max-width: $tablet-width) {
-      display: block;
-      padding-bottom: 20px;
-      border-bottom: 1px solid $border-bottom-footer;
-      width: 100%;
-    }
-
-    &:hover {
-      color: $white-color;
-    }
-  }
-
   &--block {
     @media (max-width: $tablet-width) {
       display: block;
@@ -152,6 +217,7 @@
     justify-content: center;
     border: none;
     padding: 0;
+    margin-top: 7px;
   }
 }
 

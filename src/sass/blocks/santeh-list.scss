@@ -35,6 +35,7 @@
   padding-left: 20px;
   border-left: 1px solid $black-color;
   transition: 0.3px;
+  display: none;
 
   li {
     padding-bottom: 8px;
@@ -61,7 +62,6 @@
 .santeh-list__nav-santeh-link {
   display: flex;
   flex-direction: row;
-  // justify-content: space-between;
   max-width: 225px;
   align-items: baseline;
   cursor: pointer;
@@ -80,17 +80,12 @@
   }
 }
 
-.santeh-list__prewiev-pict  {
+.santeh-list__prewiev-pict {
   display: none;
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-
-.santeh-list__prewiev-pict  {
   padding-top: 20px;
-  width: 100%;
-  height: 100%;
 }
 
 .santeh-list__nav-common {

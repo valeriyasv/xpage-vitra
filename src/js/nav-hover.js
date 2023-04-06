@@ -10,9 +10,11 @@ navItem.addEventListener('mouseover', (e) => {
     console.log(menuList)
     menuList.addEventListener('mouseover', (e) => {
       const itemMenuImage = document.querySelector(`.santeh-list__prewiev-pict[data-name=${e.target.dataset.name}]`);
+      const twoMenu = document.querySelector(`.santeh-list__nav-common[data-name=${e.target.dataset.name}]`)
       const allItem = document.querySelectorAll('.santeh-list__prewiev-pict');
       allItem.forEach(item => {
         item.style.display = 'none';
+        twoMenu.style.display = 'block';
       })
       itemMenuImage.style.display = 'block';
       console.log(itemMenuImage)

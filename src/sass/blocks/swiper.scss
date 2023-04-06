@@ -1,15 +1,17 @@
 .swiper-container {
   width: 100%;
-  height: calc(100vh - 210px);
+  // height: calc(100vh - 210px);
   max-width: 1360px;
   margin: 0 auto;
   border-bottom: 5px solid $main-border-color;
   position: relative;
   overflow: hidden;
 
-  .swiper-pagination {
-    width: 128px;
-  }
+}
+
+.swiper-pagination {
+  width: 128px;
+  left: 1062px;
 }
 
 .swiper-container-card {
@@ -79,12 +81,21 @@
 .swiper-slide {
   background-color: $white-color;
   height: 100%;
-  max-height: 600px;
+  // max-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3em;
   width: 100%;
+  
+  img {
+    width: 100%;
+    display: block;
+    height: calc(100vh - 210px);
+    min-height: 500px;
+    transition: .3s;
+    object-fit: cover;
+  }
 }
 
 .swiper-slide__main  {
@@ -103,8 +114,10 @@
 .swiper-slide__main-santeh, 
 .swiper-slide__main-tile {
   position: relative;
-  height: 100%;
-  flex-shrink: 0;
+  position: relative;
+    flex: 1 1;
+  // height: 100%;
+  // flex-shrink: 0;
 
   p {
     position: absolute;
@@ -186,6 +199,8 @@
 
 .swiper-slide__main-santeh {
   cursor: pointer;
+  position: relative;
+    flex: 1 1;
 }
 
 .swiper-slide__main-santeh:hover,

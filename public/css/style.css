@@ -836,24 +836,27 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   display: none;
 }
 
-.cards {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 999;
-}
-
 .card-active {
   max-width: 400px;
   width: 100%;
-  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   transition-duration: 1s;
   transition-property: all;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
 }
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
+  .card-active {
+    height: 80vh;
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease;
+  }
+}
+@media (max-width: 1030px) {
   .card-active {
     position: fixed;
     left: 0;
@@ -865,7 +868,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
     margin: 0 auto;
     max-width: 550px;
     width: 100%;
-    height: 100%;
     z-index: 999;
     transition: bottom 0.5s ease-in-out;
   }

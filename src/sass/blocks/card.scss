@@ -2,7 +2,15 @@
   display: none;
 }
 
+.cards {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
 .card-active {
+  max-width: 400px;
   width: 100%;
   position: relative;
   display: flex;

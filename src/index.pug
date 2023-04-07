@@ -21,32 +21,32 @@ html(lang="ru").html
         .swiper-slide
           .swiper-slide__main
             .swiper-slide__main-santeh
-              img(src="img/photo-main-san.jpg", alt="")
+              img(src="img/photo-main-san.jpg", alt="").swiper-slide__img
               .swiper-slide__main-santeh-content
                 p Сантехника
                 span Встречайте новое<br>поступление сантехники<br>из натурального камня →
             .swiper-slide__main-tile 
-              img(src="img/photo-main-tile.jpg", alt="")
+              img(src="img/photo-main-tile.jpg", alt="").swiper-slide__img
               .swiper-slide__main-tile-content
                 p Плитка
                 span Оцените возможности<br> керамогранита с новой<br>серией MIX 2020 →
         .swiper-slide
-           img(src="img/photo1.jpg", alt="")
+           img(src="img/photo1.jpg", alt="").swiper-slide__img
            .swiper-slide__content
               p VitrA Tiles at Cersaie Exhibition 
               span Встречайте новое поступление<br>плитки и сантехники →
         .swiper-slide
-           img(src="img/photo2.jpg", alt="")
+           img(src="img/photo2.jpg", alt="").swiper-slide__img
            .swiper-slide__content
               p VitrA Tiles at Cersaie Exhibition 
               span Встречайте новое поступление<br>плитки и сантехники →
         .swiper-slide
-           img(src="img/photo1.jpg", alt="")
+           img(src="img/photo1.jpg", alt="").swiper-slide__img
            .swiper-slide__content
               p VitrA Tiles at Cersaie Exhibition 
               span Встречайте новое поступление<br>плитки и сантехники →
         .swiper-slide
-           img(src="img/photo2.jpg", alt="")
+           img(src="img/photo2.jpg", alt="").swiper-slide__img
            .swiper-slide__content
               p VitrA Tiles at Cersaie Exhibition 
               span Встречайте новое поступление<br>плитки и сантехники →
@@ -69,45 +69,46 @@ html(lang="ru").html
             .swiper-button-next-card(id = 'swiperNext')
               svg(width='40' height='40').collection__btn-icon.collection__btn-icon--next
                 use(xlink:href="img/sprite.svg#icon-arr-button")
-        .swiper-container-card
-          .swiper-wrapper
-            .swiper-slide
-              .collection__images
-                .coll
-                  .collection__images-shell
-                    picture
-                      source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
-                      img(src="img/photo-collection.jpg", alt="").collection__photo
-                    .collection__btn-plus
-                      button(data-name="зеркало" style='left: 10%; bottom: 26%; position: absolute').collection__btn-plus-black 
-                      button(data-name="плитка" style='left: 45%; top: 37%; position: absolute').collection__btn-plus-black 
-                      button(data-name="ручка" style='right: 18%; bottom: 20%; position: absolute').collection__btn-plus-black 
-                      button(data-name="подставка" style='left: 29%; bottom: 36%; position: absolute').collection__btn-plus-black.black-active
-                .cards
-                  include _mixins.pug
-                  +card('зеркало', 'img/photo-card2.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-                  +card('плитка', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-                  +card('ручка', 'img/photo-card.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-                  +card('подставка', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-            .swiper-slide
-              .collection__images
-                .coll
-                  .collection__images-shell
-                    picture
-                      source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
-                      img(src="img/photo-collection2.jpg", alt="").collection__photo
-                    .collection__btn-plus
-                      button(data-name="туалет" style='left: 80%; bottom: 60%; position: absolute').collection__btn-plus-black 
-                      button(data-name="шкаф" style='left: 41%; top: 37%; position: absolute').collection__btn-plus-black 
-                      button(data-name="ванна" style='right: 30%; bottom: 20%; position: absolute').collection__btn-plus-black 
-                      button(data-name="раковина" style='left: 29%; bottom: 30%; position: absolute').collection__btn-plus-black.black-active
-                .cards
-                  include _mixins.pug
-                  +card('туалет', 'img/photo-card2.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-                  +card('шкаф', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-                  +card('ванна', 'img/photo-card.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-                  +card('раковина', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-         
+        .collection__shell
+          .swiper-container-card
+            .swiper-wrapper
+              .swiper-slide
+                .collection__images
+                  .coll
+                    .collection__images-shell
+                      picture
+                        source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
+                        img(src="img/photo-collection.jpg", alt="").collection__photo
+                      .collection__btn-plus
+                        button(data-name="зеркало" style='left: 10%; bottom: 26%; position: absolute').collection__btn-plus-black 
+                        button(data-name="плитка" style='left: 45%; top: 37%; position: absolute').collection__btn-plus-black 
+                        button(data-name="ручка" style='right: 18%; bottom: 20%; position: absolute').collection__btn-plus-black 
+                        button(data-name="подставка" style='left: 29%; bottom: 36%; position: absolute').collection__btn-plus-black.black-active
+          .cards
+            include _mixins.pug
+            +card('зеркало', 'img/photo-card2.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +card('плитка', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +card('ручка', 'img/photo-card.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +card('подставка', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+              .swiper-slide
+                .collection__images
+                  .coll
+                    .collection__images-shell
+                      picture
+                        source(media="(max-width: 980px)" srcset="img/photo-collect-mobile.jpg")
+                        img(src="img/photo-collection2.jpg", alt="").collection__photo
+                      .collection__btn-plus
+                        button(data-name="туалет" style='left: 80%; bottom: 60%; position: absolute').collection__btn-plus-black 
+                        button(data-name="шкаф" style='left: 41%; top: 37%; position: absolute').collection__btn-plus-black 
+                        button(data-name="ванна" style='right: 30%; bottom: 20%; position: absolute').collection__btn-plus-black 
+                        button(data-name="раковина" style='left: 29%; bottom: 30%; position: absolute').collection__btn-plus-black.black-active
+          .cards
+            include _mixins.pug
+            +card('туалет', 'img/photo-card2.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +card('шкаф', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +card('ванна', 'img/photo-card.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +card('раковина', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+          
     section.section.ideas
       .wrapper
         h2.section__title  Идеи

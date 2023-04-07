@@ -493,11 +493,14 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 .swiper-slide img {
   width: 100%;
   display: block;
-  height: calc(100vh - 210px);
   min-height: 500px;
   transition: 0.3s;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.swiper-slide__img {
+  height: calc(100vh - 210px);
 }
 
 .swiper-slide__main {
@@ -801,6 +804,10 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   }
 }
 
+.collection__shell {
+  position: relative;
+}
+
 .collection__btn {
   position: relative;
   cursor: pointer;
@@ -829,7 +836,15 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   display: none;
 }
 
+.cards {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
 .card-active {
+  max-width: 400px;
   width: 100%;
   position: relative;
   display: flex;

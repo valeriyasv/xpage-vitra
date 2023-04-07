@@ -91,11 +91,14 @@
   img {
     width: 100%;
     display: block;
-    height: calc(100vh - 210px);
     min-height: 500px;
     transition: .3s;
     object-fit: cover;
   }
+}
+
+.swiper-slide__img {
+  height: calc(100vh - 210px);
 }
 
 .swiper-slide__main  {

@@ -1,6 +1,5 @@
 .collection {
-  
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     margin-top: 70px;
   }
 }

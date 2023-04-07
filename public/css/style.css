@@ -638,7 +638,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   flex-direction: row;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   .collection {
     margin-top: 70px;
   }
@@ -852,13 +852,12 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 @media (max-width: 1030px) {
   .card-active {
     height: 80vh;
-    transform: translateX(-50%);
     transition: bottom 0.3s ease;
   }
 }
 @media (max-width: 1030px) {
   .card-active {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
@@ -868,6 +867,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
     margin: 0 auto;
     max-width: 550px;
     width: 100%;
+    height: 80vh;
     z-index: 999;
     transition: bottom 0.5s ease-in-out;
   }
@@ -963,10 +963,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   .card__image {
     position: relative;
   }
-}
-
-.show {
-  transform: translateY(0);
 }
 
 .ideas {

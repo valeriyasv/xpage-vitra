@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container-main', {
   // Options go here
   spaceBetween: 0,
   pagination: {

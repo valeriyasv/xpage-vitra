@@ -1,4 +1,4 @@
-.swiper-container {
+.swiper-container-main {
   width: 100%;
   // height: calc(100vh - 210px);
   max-width: 1360px;
@@ -7,6 +7,11 @@
   position: relative;
   overflow: hidden;
 
+  .swiper-slide:nth-child(1) {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .swiper-pagination {
@@ -129,7 +134,7 @@
     top: 40px;
     left: 40px;
 
-    @media (max-width: 900px) {
+    @media (max-width: $tablet-width) {
       font-size: 40px;
     }
   }
@@ -223,7 +228,7 @@
   }
 }
 
-.swiper-container {
+.swiper-container-main {
 
   .swiper-button-next {
     width: 10%;

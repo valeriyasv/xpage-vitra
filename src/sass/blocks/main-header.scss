@@ -314,3 +314,10 @@
     left: 0;
   }
 }
+
+.language:hover {
+
+  .main-header__options-item.main-header__options-item--arr {
+    border-right: none;
+  }
+}

@@ -412,13 +412,22 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   left: 0;
 }
 
-.swiper-container {
+.language:hover .main-header__options-item.main-header__options-item--arr {
+  border-right: none;
+}
+
+.swiper-container-main {
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
   border-bottom: 5px solid #B01E19;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 1030px) {
+  .swiper-container-main .swiper-slide:nth-child(1) {
+    display: none;
+  }
 }
 
 .swiper-pagination {
@@ -530,7 +539,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   top: 40px;
   left: 40px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   .swiper-slide__main-santeh p,
   .swiper-slide__main-tile p {
     font-size: 40px;
@@ -622,7 +631,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   z-index: 88;
 }
 
-.swiper-container .swiper-button-next {
+.swiper-container-main .swiper-button-next {
   width: 10%;
   height: 100%;
   text-align: center;
@@ -835,6 +844,11 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 .card {
   display: none;
 }
+@media (max-width: 1030px) {
+  .card {
+    bottom: -100%;
+  }
+}
 
 .card-active {
   max-width: 400px;
@@ -848,6 +862,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   right: 0;
   top: 0;
   z-index: 999;
+  bottom: 0;
 }
 @media (max-width: 1030px) {
   .card-active {
@@ -860,7 +875,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
     padding: 0 40px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;

@@ -17,7 +17,7 @@ btnPlus.forEach((item)  => {
     // Изменение стилей для мобильных устройств
     wrapperSwiper.style.overflow = 'visible';
     itemMenuImage.classList.add('card-mobile');
-    itemMenuImage.classList.add('card-active')
+    itemMenuImage.classList.add('card-active');
     itemMenuImage.classList.add('show');
     // cardMob.style.transform = 'translateY(100%)';
     body.style.backgroundColor = '#f2f2f2'

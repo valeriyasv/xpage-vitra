@@ -84,7 +84,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 .wrapper {
   padding: 0 15px;
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 1030px) and (max-width: 1200px) {
   .wrapper {
     padding: 0 40px;
   }
@@ -715,7 +715,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   grid-template-columns: repeat(9, 1fr);
   grid-column-gap: 20px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   .collection__images {
     display: block;
     width: 100%;
@@ -728,7 +728,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   margin-right: 20px;
   display: block;
 }
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   .collection__photo {
     -o-object-fit: cover;
        object-fit: cover;
@@ -807,7 +807,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   grid-column-start: 1;
   grid-column-end: 7;
 }
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   .coll {
     position: relative;
   }
@@ -846,12 +846,54 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 @media (max-width: 1030px) {
   .card {
-    bottom: -100%;
+    bottom: -495px;
   }
 }
 
 .card-active {
-  max-width: 400px;
+  max-width: 310px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  transition-duration: 1s;
+  transition-property: all;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+@media (max-width: 1030px) {
+  .card-active {
+    bottom: 0;
+    top: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 0 auto;
+    max-width: 470px;
+    padding-bottom: 23px;
+    width: 100%;
+    z-index: 999;
+    transition: bottom 0.5s ease-in-out;
+  }
+}
+@media (min-width: 1150px) {
+  .card-active {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1330px) {
+  .card-active {
+    max-width: 400px;
+  }
+}
+
+.card-active-desc {
+  max-width: 310px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -865,25 +907,18 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   bottom: 0;
 }
 @media (max-width: 1030px) {
-  .card-active {
-    height: 80vh;
-    transition: bottom 0.3s ease;
+  .card-active-desc {
+    display: none;
   }
 }
-@media (max-width: 1030px) {
-  .card-active {
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 0 40px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    margin: 0 auto;
-    max-width: 550px;
-    width: 100%;
-    height: 80vh;
-    z-index: 999;
-    transition: bottom 0.5s ease-in-out;
+@media (min-width: 1150px) {
+  .card-active-desc {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1330px) {
+  .card-active-desc {
+    max-width: 400px;
   }
 }
 
@@ -902,9 +937,10 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
      object-fit: contain;
   position: relative;
 }
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   .card__pict {
     max-height: 414px;
+    min-height: 370px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -942,17 +978,8 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   left: 0;
 }
 
-.cards {
-  grid-column-start: 7;
-  grid-column-end: 10;
-}
-@media (max-width: 900px) {
-  .cards {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
+.card__image {
+  position: relative;
 }
 
 .card__icons {
@@ -984,7 +1011,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 @media (max-width: 768px) {
   .ideas {
-    margin-top: 70px;
     padding-bottom: 70px;
   }
 }
@@ -1453,13 +1479,17 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   padding: 0;
 }
 
+.show {
+  display: block;
+}
+
 .menu {
   display: none;
 }
 @media (max-width: 1030px) {
   .menu {
     display: block;
-    left: -100%;
+    left: -376px;
     background-color: #ffffff;
     max-width: 376px;
     min-width: 320px;
@@ -1476,7 +1506,8 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 @media (max-width: 1030px) {
   .menu-santeh {
-    left: -85%;
+    display: block;
+    left: -376px;
     max-width: 376px;
     min-width: 320px;
     background-color: #ffffff;
@@ -1498,6 +1529,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 .menu__top--santeh {
   margin-bottom: 23px;
+  padding-bottom: 16px;
 }
 
 .menu__picture {
@@ -1625,10 +1657,13 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 .santeh-list__nav-santeh-link .santeh-list__svg {
   display: none;
 }
-.santeh-list__nav-santeh-link:hover {
+
+.santeh-list__nav-santeh-link:hover,
+.santeh-list__nav-santeh-link.styled {
   color: #B49F8C;
 }
-.santeh-list__nav-santeh-link:hover .santeh-list__svg {
+.santeh-list__nav-santeh-link:hover .santeh-list__svg,
+.santeh-list__nav-santeh-link.styled .santeh-list__svg {
   display: block;
   margin-right: 10px;
 }
@@ -1731,6 +1766,11 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 
 .section {
   margin-top: 120px;
+}
+@media (max-width: 1030px) {
+  .section {
+    margin-top: 70px;
+  }
 }
 
 .button {

@@ -70,13 +70,15 @@
     display: none;
   }
 
-  &:hover {
-    color: $hover-color;
+}
 
-    .santeh-list__svg {
-      display: block;
-      margin-right: 10px;
-    }
+.santeh-list__nav-santeh-link:hover,
+.santeh-list__nav-santeh-link.styled  {
+  color: $hover-color;
+
+  .santeh-list__svg {
+    display: block;
+    margin-right: 10px;
   }
 }
 

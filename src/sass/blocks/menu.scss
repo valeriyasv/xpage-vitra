@@ -3,7 +3,7 @@
   
   @media (max-width: $tablet-width) {
     display: block;
-    left: -100%;
+    left: -376px;
     background-color: $white-color;
     max-width: 376px;
     min-width: 320px;
@@ -23,8 +23,8 @@
   display: none;
 
   @media (max-width: $tablet-width) {
-    // display: block;
-    left: -85%;
+    display: block;
+    left: -376px;
     max-width: 376px;
     min-width: 320px;
     background-color: $white-color;
@@ -46,6 +46,7 @@
 
   &--santeh {
     margin-bottom: 23px;
+    padding-bottom: 16px;
   }
 }
 

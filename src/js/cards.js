@@ -7,20 +7,20 @@ btnPlus.forEach((item)  => {
 
   item.addEventListener('click', (e) => {
     const itemMenuImage = document.querySelector(`.card[data-name=${e.target.dataset.name}]`);
-    console.log(itemMenuImage)
     const allItem = document.querySelectorAll('.card');
     allItem.forEach(item => {
       item.classList.remove('card-active')
     })
-  itemMenuImage.classList.add('card-active')
-  if (window.innerWidth < 900) {
+    itemMenuImage.classList.add('card-active')
+    
+    if (window.innerWidth < 1030) {
     // Изменение стилей для мобильных устройств
     wrapperSwiper.style.overflow = 'visible';
-    itemMenuImage.classList.add('card-mobile');
+    // itemMenuImage.classList.add('card-mobile');
     itemMenuImage.classList.add('card-active');
-    itemMenuImage.classList.add('show');
+    // itemMenuImage.classList.add('show');
     // cardMob.style.transform = 'translateY(100%)';
-    body.style.backgroundColor = '#f2f2f2'
+    body.style.backgroundColor = '#000000'
     allItem.forEach(item => {
       item.classList.remove('card-active')
     })

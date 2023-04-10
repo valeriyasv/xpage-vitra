@@ -24,7 +24,7 @@ mixin card(name, src, tagOne, tagTwo, title, num, price)
           button.button.button--card Купить 
 
 mixin card-active(name, src, tagOne, tagTwo, title, num, price)
-  article.card(data-name= name).card-active
+  article.card.card-active-desc(data-name= name).card-active
     .card__image
       img(src= src width="440" height="440").card__pict
       .card__top

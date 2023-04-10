@@ -1,8 +1,8 @@
 .card {
   display: none;
-
+  
   @media (max-width: $tablet-width) {
-    bottom: -100%;
+    bottom: -495px;
   }
 }
 
@@ -15,7 +15,48 @@
 // }
 
 .card-active {
-  max-width: 400px;
+  max-width: 310px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $white-color;
+  transition-duration: 1s;
+  transition-property: all;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  
+  @media (max-width: $tablet-width) {
+    bottom: 0;
+    top: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 0 auto;
+    max-width: 470px;
+    padding-bottom: 23px;
+    width: 100%;
+    // height: 80vh;
+    z-index: 999;
+    transition: bottom 0.5s ease-in-out;
+    // transform: translateY(-100%);
+  }
+
+  @media (min-width: 1150px) {
+    max-width: 350px;
+  }
+
+  @media (min-width: 1330px) {
+    max-width: 400px;
+  }
+}
+
+.card-active-desc {
+  max-width: 310px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -27,26 +68,17 @@
   top: 0;
   z-index: 999;
   bottom: 0;
+
   @media (max-width: $tablet-width) {
-    // position: fixed;
-    height: 80vh;
-    transition: bottom 0.3s ease;
+    display: none;
+  }
+
+  @media (min-width: 1150px) {
+    max-width: 350px;
   }
   
-  @media (max-width: $tablet-width) {
-    position: absolute;
-    left: 0;
-    right: 0;
-    
-    padding: 0 40px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    margin: 0 auto;
-    max-width: 550px;
-    width: 100%;
-    height: 80vh;
-    z-index: 999;
-    transition: bottom 0.5s ease-in-out;
+  @media (min-width: 1330px) {
+    max-width: 400px;
   }
 }
 
@@ -64,8 +96,9 @@
   object-fit: contain;
   position: relative;
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     max-height: 414px;
+    min-height: 370px;
     object-fit: cover;
   }
 }
@@ -102,17 +135,21 @@
   left: 0;
 }
 
-.cards {
-  @media (max-width: 900px) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  grid-column-start: 7;
-  grid-column-end: 10;
+.card__image {
+  position: relative;
 }
+
+// .cards {
+//   @media (max-width: 900px) {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//   }
+
+//   grid-column-start: 7;
+//   grid-column-end: 10;
+// }
 
 .card__icons {
   display: none;

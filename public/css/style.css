@@ -81,6 +81,15 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   scroll-behavior: smooth;
 }
 
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный черный цвет */
+  z-index: 99999; /* чтобы фон был поверх всего на странице */
+}
+
 .wrapper {
   padding: 0 15px;
 }
@@ -846,18 +855,19 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 @media (max-width: 1030px) {
   .card {
-    bottom: -495px;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: 0.5s;
   }
 }
 
 .card-active {
+  bottom: 0;
+  display: flex;
   max-width: 310px;
   width: 100%;
-  display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  transition-duration: 1s;
-  transition-property: all;
   position: absolute;
   right: 0;
   top: 0;
@@ -865,20 +875,18 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 @media (max-width: 1030px) {
   .card-active {
-    bottom: 0;
     top: auto;
     position: fixed;
     left: 0;
-    right: 0;
     padding: 0 40px;
+    padding-bottom: 23px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     margin: 0 auto;
     max-width: 470px;
-    padding-bottom: 23px;
     width: 100%;
+    transform: translateY(0);
     z-index: 999;
-    transition: bottom 0.5s ease-in-out;
   }
 }
 @media (min-width: 1150px) {
@@ -888,36 +896,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 @media (min-width: 1330px) {
   .card-active {
-    max-width: 400px;
-  }
-}
-
-.card-active-desc {
-  max-width: 310px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  transition-duration: 1s;
-  transition-property: all;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 999;
-  bottom: 0;
-}
-@media (max-width: 1030px) {
-  .card-active-desc {
-    display: none;
-  }
-}
-@media (min-width: 1150px) {
-  .card-active-desc {
-    max-width: 350px;
-  }
-}
-@media (min-width: 1330px) {
-  .card-active-desc {
     max-width: 400px;
   }
 }
@@ -939,8 +917,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 @media (max-width: 1030px) {
   .card__pict {
-    max-height: 414px;
-    min-height: 370px;
+    height: 414px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1135,7 +1112,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
     max-width: 235px;
   }
 }
-@media (max-width: 1030px) {
+@media (max-width: 768px) {
   .ideas__card .ideas__card-desc--width {
     margin: 0 0 0 15px;
   }
@@ -1202,7 +1179,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   background-color: #8C8987;
   color: #ffffff;
   font-size: 16px;
-  padding: 40px;
+  padding: 40px 0;
 }
 @media (max-width: 1030px) {
   .footer {
@@ -1481,6 +1458,49 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 
 .show {
   display: block;
+}
+
+.footer__nav-item--company.opened::after {
+  transform: rotate(0deg);
+  top: 5px;
+}
+
+.footer__nav-item--products.opened::after {
+  transform: rotate(0deg);
+  top: 5px;
+}
+
+.footer__nav-item--store.opened::after {
+  transform: rotate(0deg);
+  top: 5px;
+}
+
+@media (max-width: 1030px) {
+  .footer__nav-products:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .footer__nav-store:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .footer__nav-company:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__nav-company {
+  transition: 5s;
+}
+
+.footer__nav-company:hover,
+.footer__nav-store:hover,
+.footer__nav-products:hover {
+  color: #B49F8C;
 }
 
 .menu {
@@ -1785,6 +1805,7 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 .button:hover {
   background-color: #CD100A;
   border-radius: 20px;
+  cursor: pointer;
 }
 @media (max-width: 900px) {
   .button--card {

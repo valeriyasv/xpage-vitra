@@ -14,3 +14,14 @@ p,h1,h2,h3,a,span,li{
 .html {
   scroll-behavior: smooth;
 }
+
+.overlay {
+  position: absolute;
+  // overflow: hidden;  
+  // top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный черный цвет */
+  z-index: 99999; /* чтобы фон был поверх всего на странице */
+}

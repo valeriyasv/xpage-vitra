@@ -10,6 +10,7 @@
   &:hover {
     background-color: $hover-button-color;
     border-radius: 20px;
+    cursor: pointer;
   }
 
   &--card {

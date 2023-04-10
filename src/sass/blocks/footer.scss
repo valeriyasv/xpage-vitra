@@ -19,7 +19,7 @@
   background-color: $footer-color;
   color: $white-color;
   font-size: 16px;
-  padding: 40px;
+  padding: 40px 0;
 
   @media (max-width: $tablet-width) {
    padding: 20px 0 40px 0;
@@ -299,4 +299,49 @@
 
 .show {
   display: block;
+}
+
+.footer__nav-item--company.opened::after {
+  transform: rotate(0deg);
+  top: 5px;
+}
+
+.footer__nav-item--products.opened::after {
+  transform: rotate(0deg);
+  top: 5px;
+}
+
+.footer__nav-item--store.opened::after {
+  transform: rotate(0deg);
+  top: 5px;
+}
+
+.footer__nav-products:last-child {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__nav-store:last-child {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__nav-company:last-child {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__nav-company {
+  transition: 5s;
+}
+
+.footer__nav-company,
+.footer__nav-store,
+.footer__nav-products {
+  &:hover {
+    color: $hover-color;
+  }
 }

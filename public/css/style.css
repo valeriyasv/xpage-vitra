@@ -90,6 +90,22 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   z-index: 99999; /* чтобы фон был поверх всего на странице */
 }
 
+body.modal-open {
+  overflow: hidden;
+  position: relative;
+}
+
+body.modal-open::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
 .wrapper {
   padding: 0 15px;
 }
@@ -423,6 +439,10 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 
 .language:hover .main-header__options-item.main-header__options-item--arr {
   border-right: none;
+}
+
+.santeh-list__shell [data-name=сантехника]:not(li) {
+  display: block;
 }
 
 .swiper-container-main {
@@ -862,7 +882,6 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
 }
 
 .card-active {
-  bottom: 0;
   display: flex;
   max-width: 310px;
   width: 100%;

@@ -322,9 +322,9 @@
   }
 }
 
-// .santeh-list__shell {
+.santeh-list__shell {
 
-//   [data-name="унитазы"] {
-//     display: block;
-//   }
-// }
+  [data-name="сантехника"]:not(li) {
+    display: block;
+  }
+}

@@ -1,6 +1,8 @@
 mixin card(name, src, tagOne, tagTwo, title, num, price)
   article.card(data-name= name)
     .card__image
+      svg(width='25' height='25').card__close
+        use(xlink:href="img/sprite.svg#icon-close")
       img(src= src width="440" height="440").card__pict
       .card__top
         .card__badges 
@@ -26,6 +28,8 @@ mixin card(name, src, tagOne, tagTwo, title, num, price)
 mixin card-active(name, src, tagOne, tagTwo, title, num, price)
   article.card(data-name= name).card-active
     .card__image
+      svg(width='25' height='25').card__close
+        use(xlink:href="img/sprite.svg#icon-close")
       img(src= src width="440" height="440").card__pict
       .card__top
         .card__badges 

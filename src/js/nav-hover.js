@@ -7,14 +7,18 @@ navItem.addEventListener('mouseover', (e) => {
 
   const menuList = document.querySelector('.santeh-list__nav-santeh');
 
-  console.log(menuList)
   menuList.addEventListener('mouseover', (e) => {
     const currentDataName = e.target.dataset.name;
     const itemMenuImage = document.querySelector(`.santeh-list__prewiev-pict[data-name=${currentDataName}]`);
     const twoMenu = document.querySelector(`.santeh-list__nav-common[data-name=${currentDataName}]`);
     const allItem = document.querySelectorAll('.santeh-list__prewiev-pict');
     const categor = document.querySelectorAll('.santeh-list__nav-common');
+    const listCategor = document.querySelectorAll('.santeh-list__nav-santeh-link');
     
+    listCategor.forEach(item => {
+      item.classList.remove('styled')
+    })
+
     twoMenu.style.display = 'block';
     itemMenuImage.style.display = 'block';
     allItem.forEach(item => {
@@ -33,5 +37,4 @@ navItem.addEventListener('mouseover', (e) => {
   hoverContent.addEventListener('mouseleave', () => {
     hoverContent.classList.remove('active')
   })
-
 })

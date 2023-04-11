@@ -59,7 +59,7 @@
     max-width: 470px;
     width: 100%;
     transform: translateY(0);
-    z-index: 999;
+    z-index: 999999;
   }
 
   @media (min-width: 1150px) {
@@ -159,7 +159,20 @@
 }
 
 .card__image {
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-width) {
     position: relative;
+  }
+}
+
+.card__close {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: -35px;
+    color: $white-color;
+    
   }
 }

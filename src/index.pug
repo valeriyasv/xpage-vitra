@@ -84,12 +84,6 @@ html(lang="ru").html
                         button(data-name="плитка" style='left: 45%; top: 37%; position: absolute').collection__btn-plus-black 
                         button(data-name="ручка" style='right: 18%; bottom: 20%; position: absolute').collection__btn-plus-black 
                         button(data-name="подставка" style='left: 29%; bottom: 36%; position: absolute').collection__btn-plus-black.black-active
-          .cards
-            include _mixins.pug
-            +card-active('зеркало', 'img/photo-card2.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-            +card('плитка', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-            +card('ручка', 'img/photo-card.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-            +card('подставка', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
               .swiper-slide
                 .collection__images
                   .coll
@@ -104,10 +98,16 @@ html(lang="ru").html
                         button(data-name="раковина" style='left: 29%; bottom: 30%; position: absolute').collection__btn-plus-black.black-active
           .cards
             include _mixins.pug
+            +cardDesc('зеркало', 'img/photo-card2.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +card('плитка', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +card('ручка', 'img/photo-card.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +card('подставка', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+          .cards
+            include _mixins.pug
             +card('туалет', 'img/photo-card2.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
             +card('шкаф', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
             +card('ванна', 'img/photo-card.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
-            +card('раковина', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
+            +cardDesc('раковина', 'img/photo-card3.jpg', 'Бестселлер', 'New', 'Liquid Toilet Brush Holder', 'Арт. 7670B003-7211', '2 540 Р.')
           
     section.section.ideas
       .wrapper

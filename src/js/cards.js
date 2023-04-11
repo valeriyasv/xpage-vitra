@@ -6,6 +6,7 @@ function openCard(e) {
   const itemMenuImage = document.querySelector(`.card[data-name=${e.target.dataset.name}]`);
   allItem.forEach(item => {
     item.classList.remove('card-active');
+    item.classList.remove('card-active-desc')
   });
   itemMenuImage.classList.add('card-active');
   if (window.innerWidth < 1030) {

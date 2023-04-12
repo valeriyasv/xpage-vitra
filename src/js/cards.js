@@ -10,6 +10,8 @@ function openCard(e) {
   });
   itemMenuImage.classList.add('card-active');
   if (window.innerWidth < 1030) {
+    itemMenuImage.style.bottom = '0';
+
     body.classList.add('no-scroll');
     dimmer = document.createElement('div');
     dimmer.classList.add('dimmer');
@@ -28,6 +30,7 @@ function openCard(e) {
 function closeCard() {
   allItem.forEach(item => {
     item.classList.remove('card-active');
+    item.style.bottom = '-539px';
   });
   if (window.innerWidth < 1030) {
     body.classList.remove('no-scroll');

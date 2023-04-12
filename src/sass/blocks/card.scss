@@ -3,8 +3,8 @@
   display: none;
   
   @media (max-width: $tablet-width) {
-    bottom: 0;
-    transform: translateY(100%);
+    position: absolute;
+    bottom: -539px;
     transition: 0.5s;
   }
 }
@@ -57,7 +57,11 @@
     margin: 0 auto;
     max-width: 470px;
     width: 100%;
-    transform: translateY(0);
+    transition: 0.5s;
+    // transform: translateY(0);
+    // transform: translateY(100%);
+    // bottom: 0;
+
     z-index: 999999;
   }
 

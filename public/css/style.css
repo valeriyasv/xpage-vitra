@@ -896,8 +896,8 @@ body.modal-open::before {
 }
 @media (max-width: 1030px) {
   .card {
-    bottom: 0;
-    transform: translateY(100%);
+    position: absolute;
+    bottom: -539px;
     transition: 0.5s;
   }
 }
@@ -954,7 +954,7 @@ body.modal-open::before {
     margin: 0 auto;
     max-width: 470px;
     width: 100%;
-    transform: translateY(0);
+    transition: 0.5s;
     z-index: 999999;
   }
 }

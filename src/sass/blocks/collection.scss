@@ -24,7 +24,6 @@
 
 .collection__top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
@@ -35,7 +34,6 @@
 
 .collection__nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding-left: 40px;
 
@@ -51,13 +49,11 @@
 
 .collection__txt {
   display: flex;
-  flex-direction: row;
   align-items: baseline;
 }
 
 .collection__arr {
   display: flex;
-  flex-direction: row;
 }
 
 .collection__images {

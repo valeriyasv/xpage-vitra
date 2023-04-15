@@ -10,7 +10,6 @@
 
 .main-header__top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
@@ -20,7 +19,6 @@
 
 .main-header__options {
   display: flex;
-  flex-direction: row;
   align-items: center;
   position: relative;
   right: 65px;
@@ -59,7 +57,6 @@
   
   &--hidden {
     display: flex;
-    flex-direction: row;
     align-items: center;
     
     p {
@@ -86,7 +83,6 @@
 
 .main-header__nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
 
   @media (max-width: $tablet-width) {
@@ -97,7 +93,6 @@
 .main-header__bottom {
   margin-top: 95px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
@@ -111,7 +106,6 @@
 
   &--hover {
     display: flex;
-    flex-direction: row;
     align-items: center;
 
     p {
@@ -122,7 +116,6 @@
 
 .main-header__search {
   display: flex;
-  flex-direction: row;
   padding-bottom: 20px;
   align-items: center;
 
@@ -132,7 +125,6 @@
 
   &--icon {
     display: flex;
-    flex-direction: row;
     align-items: center;
     background-color: transparent;
     cursor: pointer;
@@ -150,8 +142,6 @@
 
   &--where {
     display: flex;
-    flex-direction: row;
-    // align-items: center;
     
     &:hover {
       color: $hover-color;
@@ -166,8 +156,6 @@
 .main-header__search-btn {
   float: right;
   display: flex;
-  flex-direction: row;
-  // align-items: center;
 
   p {
     padding-left: 10px;
@@ -224,7 +212,6 @@
 .main-header__shell {
   @media (max-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }

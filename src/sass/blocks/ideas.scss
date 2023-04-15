@@ -2,7 +2,6 @@
   padding-bottom: 40px;
 
   @media (max-width: 768px) {
-    // margin-top: 70px;
     padding-bottom: 70px;
   }
 }
@@ -39,13 +38,11 @@
 
 .ideas__nav {
   display: flex;
-  flex-direction: row;
   flex-shrink: 0;
 }
 
 .ideas__nav-bottom {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding-bottom: 5px;
   border-bottom: 1px solid $black-color;

@@ -88,8 +88,8 @@ p::selection, h1::selection, h2::selection, h3::selection, a::selection, span::s
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный черный цвет */
-  z-index: 99999; /* чтобы фон был поверх всего на странице */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
 }
 
 body.modal-open {
@@ -160,7 +160,6 @@ body.modal-open::before {
 
 .main-header__top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 1030px) {
@@ -171,7 +170,6 @@ body.modal-open::before {
 
 .main-header__options {
   display: flex;
-  flex-direction: row;
   align-items: center;
   position: relative;
   right: 65px;
@@ -208,7 +206,6 @@ body.modal-open::before {
 }
 .main-header__options-item--hidden {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .main-header__options-item--hidden p {
@@ -232,7 +229,6 @@ body.modal-open::before {
 
 .main-header__nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 @media (max-width: 1030px) {
@@ -244,7 +240,6 @@ body.modal-open::before {
 .main-header__bottom {
   margin-top: 95px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 1030px) {
@@ -259,7 +254,6 @@ body.modal-open::before {
 }
 .main-header__nav-item--hover {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .main-header__nav-item--hover p {
@@ -268,7 +262,6 @@ body.modal-open::before {
 
 .main-header__search {
   display: flex;
-  flex-direction: row;
   padding-bottom: 20px;
   align-items: center;
 }
@@ -279,7 +272,6 @@ body.modal-open::before {
 }
 .main-header__search--icon {
   display: flex;
-  flex-direction: row;
   align-items: center;
   background-color: transparent;
   cursor: pointer;
@@ -297,7 +289,6 @@ body.modal-open::before {
 }
 .main-header__search--where {
   display: flex;
-  flex-direction: row;
 }
 .main-header__search--where:hover {
   color: #B49F8C;
@@ -311,7 +302,6 @@ body.modal-open::before {
 .main-header__search-btn {
   float: right;
   display: flex;
-  flex-direction: row;
 }
 .main-header__search-btn p {
   padding-left: 10px;
@@ -367,7 +357,6 @@ body.modal-open::before {
 @media (max-width: 1030px) {
   .main-header__shell {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
@@ -564,7 +553,6 @@ body.modal-open::before {
 
 .swiper-slide__main {
   display: flex;
-  flex-direction: row;
 }
 
 .swiper-slide__main-santeh-content, .swiper-slide__main-tile-content {
@@ -694,7 +682,6 @@ body.modal-open::before {
 
 .swiper-wrapper-card {
   display: flex;
-  flex-direction: row;
 }
 
 @media (max-width: 1030px) {
@@ -723,7 +710,6 @@ body.modal-open::before {
 
 .collection__top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
@@ -734,7 +720,6 @@ body.modal-open::before {
 
 .collection__nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding-left: 40px;
 }
@@ -751,13 +736,11 @@ body.modal-open::before {
 
 .collection__txt {
   display: flex;
-  flex-direction: row;
   align-items: baseline;
 }
 
 .collection__arr {
   display: flex;
-  flex-direction: row;
 }
 
 .collection__images {
@@ -1012,7 +995,6 @@ body.modal-open::before {
 
 .card__bottom {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
@@ -1107,13 +1089,11 @@ body.modal-open::before {
 
 .ideas__nav {
   display: flex;
-  flex-direction: row;
   flex-shrink: 0;
 }
 
 .ideas__nav-bottom {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding-bottom: 5px;
   border-bottom: 1px solid #000000;
@@ -1244,7 +1224,6 @@ body.modal-open::before {
 
 .footer__top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -1431,7 +1410,6 @@ body.modal-open::before {
 
 .footer__social-list {
   display: flex;
-  flex-direction: row;
 }
 @media (max-width: 1030px) {
   .footer__social-list {
@@ -1441,7 +1419,6 @@ body.modal-open::before {
 
 .footer__social {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 24px;
@@ -1460,7 +1437,6 @@ body.modal-open::before {
 
 .footer__bottom-privacy {
   display: flex;
-  flex-direction: row;
 }
 @media (max-width: 1030px) {
   .footer__bottom-privacy {
@@ -1470,7 +1446,6 @@ body.modal-open::before {
 
 .footer__bottom {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 1030px) {
@@ -1721,7 +1696,7 @@ body.modal-open::before {
 
 .santeh-list__prewiev-img {
   width: 100%;
-  height: 330px;
+  height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
 }
@@ -1755,7 +1730,6 @@ body.modal-open::before {
 
 .santeh-list__nav-santeh-link {
   display: flex;
-  flex-direction: row;
   max-width: 225px;
   align-items: baseline;
   cursor: pointer;
@@ -1778,9 +1752,12 @@ body.modal-open::before {
   display: none;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
+  max-width: 670px;
+  min-width: 477px;
+  height: 330px;
   padding-top: 20px;
+  position: absolute;
+  bottom: 0;
 }
 
 .santeh-list__nav-common li {
@@ -1849,7 +1826,6 @@ body.modal-open::before {
 
 .language__ru {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: transparent;

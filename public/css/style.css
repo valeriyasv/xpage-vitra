@@ -488,9 +488,13 @@ body.modal-open::before {
   width: 105px;
   height: 40px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   z-index: 0;
+}
+@media (max-width: 900px) {
+  .swiper-navigation {
+    left: -10px;
+  }
 }
 
 .swipe {
@@ -550,9 +554,19 @@ body.modal-open::before {
 .swiper-slide__img {
   height: calc(100vh - 210px);
 }
+@media (max-width: 1030px) {
+  .swiper-slide__img {
+    height: 100%;
+  }
+}
 
 .swiper-slide__main {
   display: flex;
+}
+@media (max-width: 900px) {
+  .swiper-slide__main {
+    flex-direction: column;
+  }
 }
 
 .swiper-slide__main-santeh-content, .swiper-slide__main-tile-content {
@@ -567,8 +581,18 @@ body.modal-open::before {
 .swiper-slide__main-tile {
   position: relative;
   position: relative;
-  max-width: 650px;
-  flex: 1 1;
+}
+@media (max-width: 900px) {
+  .swiper-slide__main-santeh,
+  .swiper-slide__main-tile {
+    height: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .swiper-slide__main-santeh,
+  .swiper-slide__main-tile {
+    flex: 1 1;
+  }
 }
 .swiper-slide__main-santeh p,
 .swiper-slide__main-tile p {
@@ -591,6 +615,12 @@ body.modal-open::before {
   color: #ffffff;
   left: 40px;
   bottom: 40px;
+}
+@media (max-width: 900px) {
+  .swiper-slide__main-santeh span,
+  .swiper-slide__main-tile span {
+    display: none;
+  }
 }
 .swiper-slide__main-santeh img,
 .swiper-slide__main-tile img {
@@ -650,7 +680,11 @@ body.modal-open::before {
 .swiper-slide__main-santeh {
   cursor: pointer;
   position: relative;
-  flex: 1 1;
+}
+@media (max-width: 900px) {
+  .swiper-slide__main-santeh span {
+    display: none;
+  }
 }
 
 .swiper-slide__main-santeh:hover,
@@ -712,13 +746,12 @@ body.modal-open::before {
 .collection__top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding-bottom: 10px;
   margin-bottom: 24px;
   border-bottom: 1px solid #000000;
   position: relative;
 }
-
 .collection__nav {
   display: flex;
   justify-content: space-between;
@@ -729,6 +762,11 @@ body.modal-open::before {
     display: none;
   }
 }
+@media (max-width: 1200px) {
+  .collection__nav {
+    padding: 0;
+  }
+}
 
 .collection__arr-img {
   padding-right: 5px;
@@ -737,7 +775,18 @@ body.modal-open::before {
 
 .collection__txt {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
+}
+@media (max-width: 900px) {
+  .collection__txt {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .collection__txt {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .collection__arr {
@@ -979,6 +1028,11 @@ body.modal-open::before {
 
 .card__title {
   font-size: 16px;
+}
+@media (max-width: 1030px) {
+  .card__title {
+    margin-top: 15px;
+  }
 }
 
 .card__vendor {
@@ -1224,6 +1278,12 @@ body.modal-open::before {
 .ideas__all {
   flex-shrink: 0;
   transition: 0.2s;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.ideas__all svg {
+  margin-left: 10px;
 }
 .ideas__all:hover {
   color: #B49F8C;
@@ -1403,7 +1463,7 @@ body.modal-open::before {
 
 .footer__social-icon {
   height: 25px;
-  padding-left: 20px;
+  margin-bottom: 30px;
   transition: 0.2s;
 }
 .footer__social-icon:hover {
@@ -1412,6 +1472,7 @@ body.modal-open::before {
 .footer__social-icon:not(:last-child) {
   border-right: 1px solid #CACACA;
   padding-right: 20px;
+  margin-right: 20px;
 }
 @media (max-width: 1030px) {
   .footer__social-icon:first-child {
@@ -1421,10 +1482,13 @@ body.modal-open::before {
 
 .footer__social-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
 }
 @media (max-width: 1030px) {
   .footer__social-list {
     order: 1;
+    width: 100%;
   }
 }
 
@@ -1444,6 +1508,20 @@ body.modal-open::before {
     padding: 0;
     margin-top: 7px;
   }
+}
+
+.footer__social-logo {
+  color: #ffffff;
+}
+
+.footer__up {
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+.footer__up svg {
+  margin-left: 5px;
+  transform: rotate(-90deg);
 }
 
 .footer__bottom-privacy {
@@ -1510,7 +1588,7 @@ body.modal-open::before {
 
 .footer__feedback-btn {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   position: absolute;
   right: 0;
@@ -1854,6 +1932,18 @@ body.modal-open::before {
 .section__title {
   font-size: 45px;
   line-height: 50px;
+  word-wrap: break-word;
+  max-width: 500px;
+}
+@media (max-width: 600px) {
+  .section__title {
+    max-width: 300px;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  .section__title {
+    max-width: 400px;
+  }
 }
 @media (max-width: 1030px) {
   .section__title {

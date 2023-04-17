@@ -2,7 +2,7 @@ const navItem = document.querySelector('.main-header__nav-item.main-header__nav-
 
 navItem.addEventListener('mouseover', (e) => {
   const hoverContent = document.querySelector('.santeh-list');
-  const navList = document.querySelector('.main-header__nav')
+  // const navList = document.querySelector('.main-header__nav')
   hoverContent.classList.add('active')
 
   const menuList = document.querySelector('.santeh-list__nav-santeh');

@@ -1,41 +1,28 @@
-const swiper = new Swiper('.swiper-container-main', {
-  // Options go here
-  spaceBetween: 0,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  loop: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 1
+const swiperContainer = document.querySelector('.swiper-container-main');
+
+if (swiperContainer) {
+  const swiper = new Swiper(swiperContainer, {
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    // 768: {
-    //   slidesPerView: 1.1
-    // },
-
-    900: {
-      slidesPerView: 1.1
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      900: {
+        slidesPerView: 1.1
+      },
     },
-
-    // 1500: {
-    //   slidesPerView: 1.5
-    // },
-
-    // 1900: {
-    //   slidesPerView: 2
-    // },
-
-    // 2600: {
-    //   slidesPerView: 2.5
-    // },
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    // prevEl: '.swiper-button-prev',
-  },
-});
+    navigation: {
+      nextEl: '.swiper-button-next',
+    },
+  });
+  console.log(swiper, 'swiper');
+} else {
+  console.log('Swiper container not found.');
+}
 
 
-
-console.log(swiper, 'swiper')

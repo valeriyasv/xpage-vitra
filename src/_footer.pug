@@ -6,9 +6,14 @@ footer.footer
         .footer__feedback
           form
             input(type="email" placeholder="Электронная почта").footer__mail-input
-            button.footer__feedback-btn →
+            button.footer__feedback-btn
+              svg(width='13' height='13')
+                use(xlink:href="img/sprite.svg#arrow-right")
       .footer__up 
-        a(href="#") Наверх  ↑
+        a(href="#") 
+          | Наверх  
+          svg(width='13' height='13')
+              use(xlink:href="img/sprite.svg#arrow-right")
     .footer__nav 
       ul.footer__nav-list
         li.footer__nav-item.footer__nav-item--block
@@ -71,8 +76,7 @@ footer.footer
         li.footer__nav-store
           a(href="#") Шоурум плитки
     .footer__social 
-      svg.footer__social-logo
-        use(xlink:href="img/sprite.svg#icon-footer-img")
+      img(src='img/icon-footer-img.png' width='124' height='35').footer__social-logo
       .footer__social-list
         a(href='#').footer__social-icon
           svg(width='25' height='25')

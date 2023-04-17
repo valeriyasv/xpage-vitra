@@ -124,7 +124,10 @@ html(lang="ru").html
               a(href="#") Дизайн ванной
             li.ideas__nav-item 
               a(href="#") Экономия воды
-          a(href="#").ideas__all Все идеи →
+          a(href="#").ideas__all 
+            | Все идеи
+            svg(width='13' height='13')
+              use(xlink:href="img/sprite.svg#arrow-right")
         .ideas__gallery 
           .ideas__card.ideas__card--row 
             .ideas__pict

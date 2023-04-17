@@ -174,7 +174,7 @@
 
 .footer__social-icon {
   height: 25px;
-  padding-left: 20px;
+  margin-bottom: 30px;
   transition: 0.2s;
 
   &:hover {
@@ -184,6 +184,7 @@
   &:not(:last-child) {
     border-right: 1px solid $border-bottom-footer;
     padding-right: 20px;
+    margin-right: 20px;
   }
 
   @media (max-width: $tablet-width) {
@@ -195,9 +196,12 @@
 
 .footer__social-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
 
   @media (max-width: $tablet-width) {
-    order: 1;  
+    order: 1;
+    width: 100%;  
   }
 }
 
@@ -215,6 +219,21 @@
     border: none;
     padding: 0;
     margin-top: 7px;
+  }
+}
+
+.footer__social-logo {
+  color: $white-color;
+}
+
+.footer__up  {
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+
+  svg {
+    margin-left: 5px;
+    transform: rotate(-90deg);
   }
 }
 
@@ -277,7 +296,7 @@
 
 .footer__feedback-btn {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   position: absolute;
   right: 0;

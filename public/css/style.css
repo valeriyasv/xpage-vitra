@@ -567,6 +567,7 @@ body.modal-open::before {
 .swiper-slide__main-tile {
   position: relative;
   position: relative;
+  max-width: 650px;
   flex: 1 1;
 }
 .swiper-slide__main-santeh p,
@@ -757,6 +758,7 @@ body.modal-open::before {
 }
 
 .collection__photo {
+  height: 680px;
   width: 100%;
   margin-right: 20px;
   display: block;
@@ -963,9 +965,8 @@ body.modal-open::before {
   display: block;
   width: 100%;
   height: 100%;
-  max-height: 440px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
   position: relative;
 }
 @media (max-width: 1030px) {
@@ -1009,6 +1010,7 @@ body.modal-open::before {
 
 .card__image {
   position: relative;
+  height: 400px;
 }
 
 .card__icons {
@@ -1068,6 +1070,7 @@ body.modal-open::before {
 
 .ideas__pict {
   overflow: hidden;
+  height: 310px;
 }
 
 .ideas__img:hover {
@@ -1128,8 +1131,9 @@ body.modal-open::before {
 }
 .ideas__card--row .ideas__img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 980px) {
   .ideas__card--row .ideas__img {
@@ -1184,6 +1188,13 @@ body.modal-open::before {
 .ideas__img {
   transition: 0.3s;
   cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.ideas__img--width {
+  width: 210px;
 }
 
 .ideas__row {
@@ -1752,12 +1763,16 @@ body.modal-open::before {
   display: none;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.santeh-list__prewiev {
+  bottom: 0;
   max-width: 670px;
   min-width: 477px;
+  margin-top: 20px;
   height: 330px;
-  padding-top: 20px;
-  position: absolute;
-  bottom: 0;
 }
 
 .santeh-list__nav-common li {

@@ -16,6 +16,7 @@
 
 .ideas__pict {
   overflow: hidden;
+  height: 310px;
 }
 
 .ideas__img {
@@ -78,7 +79,8 @@
 
     .ideas__img {
       width: 100%;
-      object-fit: contain;
+      height: 100%;
+      object-fit: cover;
 
       @media (max-width: 980px) {
         height: 230px;
@@ -137,6 +139,13 @@
 .ideas__img {
   transition: 0.3s;
   cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  &--width {
+    width: 210px;
+  }
 }
 
 .ideas__row {

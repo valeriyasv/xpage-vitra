@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(event) {
 const inputSearch = document.querySelector('.main-header__search-text');
 const search = document.querySelector('.main-header__search--icon');
 const logo = document.querySelector('.main-header__logo');
@@ -24,4 +25,5 @@ search.addEventListener('click', () => {
       }
     }
   })
+})
 })

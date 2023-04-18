@@ -1,5 +1,6 @@
 .card {
   display: none;
+  transition: 0.5s;
   
   @media (max-width: $tablet-width) {
     position: absolute;
@@ -74,7 +75,9 @@
   }
 }
 
-
+.card-active-mob {
+  bottom: 0;
+}
 .card__content {
   display: flex;
   flex-direction: column;

@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(event) {
 const navItem = document.querySelector('.main-header__nav-item.main-header__nav-item--sant');
 
 navItem.addEventListener('mouseover', (e) => {
@@ -37,4 +38,5 @@ navItem.addEventListener('mouseover', (e) => {
   hoverContent.addEventListener('mouseleave', () => {
     hoverContent.classList.remove('active')
   })
+})
 })

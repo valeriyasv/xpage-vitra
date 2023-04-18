@@ -366,7 +366,7 @@
     display: block;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.9s ease;
+    transition: max-height 0.4s ease;
   }
 }
 
@@ -376,7 +376,7 @@
     display: block;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.9s ease;
+    transition: max-height 0.4s ease;
   }
 }
 
@@ -386,11 +386,11 @@
     display: block;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.9s ease;
+    transition: max-height 0.4s ease;
   }
 }
 
 .list-active {
   max-height: 1000px;
-  transition: max-height 0.9s ease;
+  transition: max-height 0.4s ease;
 }

@@ -491,11 +491,6 @@ body.modal-open::before {
   justify-content: center;
   z-index: 0;
 }
-@media (max-width: 900px) {
-  .swiper-navigation {
-    left: -10px;
-  }
-}
 
 .swipe {
   position: relative;
@@ -777,11 +772,6 @@ body.modal-open::before {
   display: flex;
   align-items: flex-end;
 }
-@media (max-width: 900px) {
-  .collection__txt {
-    margin-bottom: 40px;
-  }
-}
 @media (max-width: 1200px) {
   .collection__txt {
     flex-direction: column;
@@ -927,6 +917,7 @@ body.modal-open::before {
 
 .card {
   display: none;
+  transition: 0.5s;
 }
 @media (max-width: 1030px) {
   .card {
@@ -1002,6 +993,10 @@ body.modal-open::before {
   .card-active {
     max-width: 400px;
   }
+}
+
+.card-active-mob {
+  bottom: 0;
 }
 
 .card__content {
@@ -1660,7 +1655,7 @@ body.modal-open::before {
     display: block;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.9s ease;
+    transition: max-height 0.4s ease;
   }
 }
 
@@ -1672,7 +1667,7 @@ body.modal-open::before {
     display: block;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.9s ease;
+    transition: max-height 0.4s ease;
   }
 }
 
@@ -1684,13 +1679,13 @@ body.modal-open::before {
     display: block;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.9s ease;
+    transition: max-height 0.4s ease;
   }
 }
 
 .list-active {
   max-height: 1000px;
-  transition: max-height 0.9s ease;
+  transition: max-height 0.4s ease;
 }
 
 .menu {
@@ -1977,6 +1972,11 @@ body.modal-open::before {
   line-height: 50px;
   word-wrap: break-word;
   max-width: 500px;
+}
+@media (max-width: 600px) {
+  .section__title {
+    max-width: 180px;
+  }
 }
 @media (max-width: 600px) {
   .section__title {

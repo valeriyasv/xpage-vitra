@@ -142,8 +142,8 @@ body.modal-open::before {
 }
 @media (min-width: 1440px) {
   .wrapper {
-    padding: 0;
-    max-width: 1360px;
+    padding: 0 40px;
+    max-width: 2000px;
     margin: 0 auto;
   }
 }
@@ -457,15 +457,15 @@ body.modal-open::before {
 
 .swiper-container-main {
   width: 100%;
-  max-width: 1360px;
+  max-width: 2000px;
   margin: 0 auto;
   border-bottom: 5px solid #B01E19;
   position: relative;
   overflow: hidden;
 }
 @media (max-width: 1030px) {
-  .swiper-container-main .swiper-slide:nth-child(1) {
-    display: none;
+  .swiper-container-main {
+    max-width: 100%;
   }
 }
 
@@ -476,7 +476,7 @@ body.modal-open::before {
 
 .swiper-container-card {
   width: 100%;
-  max-width: 1400px;
+  max-width: 2000px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -932,7 +932,7 @@ body.modal-open::before {
   .card {
     position: absolute;
     bottom: -539px;
-    transition: 0.5s;
+    animation: fade-in-fwd 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
 }
 
@@ -975,6 +975,7 @@ body.modal-open::before {
   top: 0;
   max-height: 550px;
   z-index: 999;
+  transition: 0.5s;
 }
 @media (max-width: 1030px) {
   .card-active {
@@ -1250,6 +1251,11 @@ body.modal-open::before {
 .ideas__img--width {
   width: 210px;
 }
+@media (max-width: 600px) {
+  .ideas__img--width {
+    width: 165px;
+  }
+}
 
 .ideas__row {
   display: grid;
@@ -1367,16 +1373,12 @@ body.modal-open::before {
   .footer__nav-list {
     margin-left: 0;
     width: 100%;
+    margin-bottom: 15px;
   }
 }
 .footer__nav-list li {
   margin-bottom: 8px;
-  transition: 0.2s;
-}
-@media (max-width: 1030px) {
-  .footer__nav-list li {
-    display: none;
-  }
+  transition: 0.5s;
 }
 .footer__nav-list .footer__nav-item--company {
   margin-bottom: 18px;
@@ -1384,7 +1386,6 @@ body.modal-open::before {
 @media (max-width: 1030px) {
   .footer__nav-list .footer__nav-item--company {
     display: block;
-    padding-bottom: 20px;
     border-bottom: 1px solid #CACACA;
     width: 100%;
     position: relative;
@@ -1405,7 +1406,6 @@ body.modal-open::before {
 @media (max-width: 1030px) {
   .footer__nav-list .footer__nav-item--products {
     display: block;
-    padding-bottom: 20px;
     border-bottom: 1px solid #CACACA;
     width: 100%;
     position: relative;
@@ -1426,7 +1426,6 @@ body.modal-open::before {
 @media (max-width: 1030px) {
   .footer__nav-list .footer__nav-item--store {
     display: block;
-    padding-bottom: 20px;
     border-bottom: 1px solid #CACACA;
     width: 100%;
     position: relative;
@@ -1648,6 +1647,47 @@ body.modal-open::before {
 .footer__nav-store:hover,
 .footer__nav-products:hover {
   color: #B49F8C;
+}
+
+.list-products {
+  margin-top: 20px;
+}
+@media (max-width: 1030px) {
+  .list-products {
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.9s ease;
+  }
+}
+
+.list-store {
+  margin-top: 20px;
+}
+@media (max-width: 1030px) {
+  .list-store {
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.9s ease;
+  }
+}
+
+.list-company {
+  margin-top: 20px;
+}
+@media (max-width: 1030px) {
+  .list-company {
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.9s ease;
+  }
+}
+
+.list-active {
+  max-height: 1000px;
+  transition: max-height 0.9s ease;
 }
 
 .menu {

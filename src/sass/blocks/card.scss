@@ -1,11 +1,10 @@
-
 .card {
   display: none;
   
   @media (max-width: $tablet-width) {
     position: absolute;
     bottom: -539px;
-    transition: 0.5s;
+    animation: fade-in-fwd 1.5s cubic-bezier(.39, .575, .565, 1) both;
   }
 }
 .card-active-desc {
@@ -45,6 +44,7 @@
   top: 0;
   max-height: 550px;
   z-index: 999;
+  transition: 0.5s;
   
   @media (max-width: $tablet-width) {
     top: auto;

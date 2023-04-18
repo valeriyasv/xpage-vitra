@@ -1,49 +1,43 @@
 const titlecompany = document.querySelector('.footer__nav-item--company');
-const itemCompany = document.querySelectorAll('.footer__nav-company');
+const itemCompany = document.querySelector('.list-company');
 
 const titleProducts = document.querySelector('.footer__nav-item--products');
-const itemProducts = document.querySelectorAll('.footer__nav-products');
+const itemProducts = document.querySelector('.list-products');
 
 const titleStore = document.querySelector('.footer__nav-item--store');
-const itemStore = document.querySelectorAll('.footer__nav-store');
+const itemStore = document.querySelector('.list-store');
 
 const footerList = document.querySelector('.footer__nav-list');
 
 if (window.innerWidth < 1030) {
 
   titlecompany.addEventListener('click', () => {
-      itemCompany.forEach(item => {
-        if (item.style.display === 'none') {
-          item.style.display = 'block';
+        if (!itemCompany.classList.contains('list-active')) {
+          itemCompany.classList.add('list-active')
           titlecompany.classList.add('opened');
         } else {
-          item.style.display = 'none';
+          itemCompany.classList.remove('list-active')
           titlecompany.classList.remove('opened');
         }
-    })
   })
   
   titleProducts.addEventListener('click', () => {
-    itemProducts.forEach(item => {
-      if (item.style.display === 'none') {
-        item.style.display = 'block';
+      if (!itemProducts.classList.contains('list-active')) {
+        itemProducts.classList.add('list-active')
         titleProducts.classList.add('opened')
       } else {
-        item.style.display = 'none';
+        itemProducts.classList.remove('list-active')
         titleProducts.classList.remove('opened');
       }
-    })
   })
   
   titleStore.addEventListener('click', () => {
-    itemStore.forEach(item => {
-      if (item.style.display === 'none') {
-        item.style.display = 'block';
+      if (!itemStore.classList.contains('list-active')) {
+        itemStore.classList.add('list-active')
         titleStore.classList.add('opened')
       } else {
-        item.style.display = 'none';
+        itemStore.classList.remove('list-active')
         titleStore.classList.remove('opened');
       }
-    })
   })
 }

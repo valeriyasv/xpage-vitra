@@ -18,6 +18,7 @@ if (swiper2Element) {
       prevEl: '.swiper-button-prev-card',
     },
   });
-  
   console.log(swiper2, 'swiper2');
+}  else {
+  console.log('Swiper container not found.');
 }
